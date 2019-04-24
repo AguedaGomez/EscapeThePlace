@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class InventoryPanelManager : MonoBehaviour
 {
@@ -12,13 +10,16 @@ public class InventoryPanelManager : MonoBehaviour
     public GameObject emptyItem;
     public int capacity;
 
+    public SpritesLoader spritesLoader;
+    public ItemPanelDetailBehavior itemPanelDetail;
+
     private IItemsRepository itemsRepository;
-    private readonly Dictionary<string, Sprite> itemSprites = new Dictionary<string, Sprite>();
+    private Dictionary<string, Sprite> itemSprites;
 
     // Start is called before the first frame update
     void Start()
     {
-        LoadSprites();
+        itemSprites = spritesLoader.Sprites;
 
         itemsRepository = new DummyItemsRepository();
         var playerItems = itemsRepository.GetItems();
@@ -28,21 +29,15 @@ public class InventoryPanelManager : MonoBehaviour
         DisplayEmptyItems(emptySlots);
     }
 
-    private void LoadSprites()
-    {
-        var sprites = Resources.LoadAll<Sprite>("Sprites/MenuScene/InventoryPanel/Items");
-        foreach (var sprite in sprites)
-        {
-            itemSprites.Add(sprite.name, sprite);
-        }
-    }
-
     private void DisplayPlayerItems(List<InventoryItem> items)
     {
         foreach (var item in items)
         {
             var uiItem = Instantiate(inventoryItem, itemsGrid.transform);
-            uiItem.transform.Find("ItemImage").GetComponentInChildren<Image>().sprite = itemSprites[item.name];
+            var behaviour = uiItem.GetComponent<InventoryItemBehavior>();
+            behaviour.SetItem(item);
+            behaviour.SetImage(itemSprites[item.name]);
+            behaviour.SetOnClick(itemPanelDetail.DisplayItemDetails);
         }
     }
 
@@ -59,10 +54,14 @@ public class InventoryPanelManager : MonoBehaviour
 public class InventoryItem
 {
     public string name;
+    public string description;
+    public string textInImage;
 
-    public InventoryItem(string name)
+    public InventoryItem(string name, string description, string textInImage)
     {
         this.name = name;
+        this.description = description;
+        this.textInImage = textInImage;
     }
 }
 
@@ -78,8 +77,8 @@ public class DummyItemsRepository : IItemsRepository
 
     public DummyItemsRepository()
     {
-        playerItems.Add(new InventoryItem("Lantern"));
-        playerItems.Add(new InventoryItem("Notes"));
+        playerItems.Add(new InventoryItem("Lantern", "adfoibgnersx", ""));
+        playerItems.Add(new InventoryItem("Notes", "sdfgsfgdfg", ""));
     }
 
     public List<InventoryItem> GetItems()

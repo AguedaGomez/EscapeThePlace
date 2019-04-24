@@ -13,27 +13,19 @@ public class InventoryPanelManager : MonoBehaviour
     public int capacity;
 
     private IItemsRepository itemsRepository;
-    private Dictionary<string, Sprite> itemSprites = new Dictionary<string, Sprite>();
+    private readonly Dictionary<string, Sprite> itemSprites = new Dictionary<string, Sprite>();
 
     // Start is called before the first frame update
     void Start()
     {
-        itemsRepository = new DummyItemsRepository();
         LoadSprites();
 
-        var items = itemsRepository.GetItems();
-        var empties = capacity - items.Count;
+        itemsRepository = new DummyItemsRepository();
+        var playerItems = itemsRepository.GetItems();
+        var emptySlots = capacity - playerItems.Count;
 
-        foreach (var item in items)
-        { 
-            var uiItem = Instantiate(inventoryItem, itemsGrid.transform);
-            uiItem.transform.Find("ItemImage").GetComponentInChildren<Image>().sprite = itemSprites[item.name];
-        }
-
-        for (int i = 0; i < empties; i++)
-        {
-            Instantiate(emptyItem, itemsGrid.transform);
-        }
+        DisplayPlayerItems(playerItems);
+        DisplayEmptyItems(emptySlots);
     }
 
     private void LoadSprites()
@@ -42,6 +34,23 @@ public class InventoryPanelManager : MonoBehaviour
         foreach (var sprite in sprites)
         {
             itemSprites.Add(sprite.name, sprite);
+        }
+    }
+
+    private void DisplayPlayerItems(List<InventoryItem> items)
+    {
+        foreach (var item in items)
+        {
+            var uiItem = Instantiate(inventoryItem, itemsGrid.transform);
+            uiItem.transform.Find("ItemImage").GetComponentInChildren<Image>().sprite = itemSprites[item.name];
+        }
+    }
+
+    private void DisplayEmptyItems(int empties)
+    {
+        for (int i = 0; i < empties; i++)
+        {
+            Instantiate(emptyItem, itemsGrid.transform);
         }
     }
 }

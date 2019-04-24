@@ -8,6 +8,7 @@ public class ItemPanelDetailBehavior : MonoBehaviour
     public SpritesLoader spritesLoader;
     public Image itemImage;
     public Text itemDescription;
+    public Text itemImageText;
 
     public void DisplayItemDetails(InventoryItem item)
     {
@@ -16,6 +17,7 @@ public class ItemPanelDetailBehavior : MonoBehaviour
         itemImage.SetNativeSize();
 
         itemDescription.text = item.description;
+        itemImageText.text = item.imageText;
         gameObject.SetActive(true);
     }
 

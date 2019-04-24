@@ -13,15 +13,15 @@ public class InventoryPanelManager : MonoBehaviour
     public SpritesLoader spritesLoader;
     public ItemPanelDetailBehavior itemPanelDetail;
 
-    private IItemsRepository itemsRepository;
+    private IInventoryRepository itemsRepository;
     private Dictionary<string, Sprite> itemSprites;
 
     // Start is called before the first frame update
     void Start()
     {
+        itemsRepository = new InventoryRepository();
         itemSprites = spritesLoader.Sprites;
 
-        itemsRepository = new DummyItemsRepository();
         var playerItems = itemsRepository.GetItems();
         var emptySlots = capacity - playerItems.Count;
 
@@ -47,42 +47,5 @@ public class InventoryPanelManager : MonoBehaviour
         {
             Instantiate(emptyItem, itemsGrid.transform);
         }
-    }
-}
-
-[Serializable]
-public class InventoryItem
-{
-    public string name;
-    public string description;
-    public string textInImage;
-
-    public InventoryItem(string name, string description, string textInImage)
-    {
-        this.name = name;
-        this.description = description;
-        this.textInImage = textInImage;
-    }
-}
-
-public interface IItemsRepository
-{
-    List<InventoryItem> GetItems();
-}
-
-
-public class DummyItemsRepository : IItemsRepository
-{
-    private List<InventoryItem> playerItems = new List<InventoryItem>();
-
-    public DummyItemsRepository()
-    {
-        playerItems.Add(new InventoryItem("Lantern", "adfoibgnersx", ""));
-        playerItems.Add(new InventoryItem("Notes", "sdfgsfgdfg", ""));
-    }
-
-    public List<InventoryItem> GetItems()
-    {
-        return playerItems;
     }
 }

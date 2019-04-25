@@ -4,14 +4,11 @@
 public class InventoryItem
 {
 
-    public readonly string name, description, imageText;
+    public readonly string name, description;
 
-    public InventoryItem(string name, string description, string imageText)
+    public InventoryItem(string name, string description)
     {
         this.name = name;
         this.description = description;
-        this.imageText = imageText;
     }
-
-    public InventoryItem(string name, string description): this(name, description, "") { }
 }

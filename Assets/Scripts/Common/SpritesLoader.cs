@@ -8,22 +8,13 @@ public class SpritesLoader: MonoBehaviour
     public Dictionary<string, Sprite> Sprites
     {
         get {
-            if (this._sprites.Count == 0)
+            if (_resourcesLoader == null)
             {
-                LoadSprites();
+                _resourcesLoader = new ResourcesLoader<Sprite>(route);
             }
-            return this._sprites;
+            return _resourcesLoader.LoadedResources;
         }
     }
 
-    private readonly Dictionary<string, Sprite> _sprites = new Dictionary<string, Sprite>();
-
-    private void LoadSprites()
-    {
-        var sprites = Resources.LoadAll<Sprite>(route);
-        foreach (var sprite in sprites)
-        {
-            _sprites.Add(sprite.name, sprite);
-        }
-    }
+    private ResourcesLoader<Sprite> _resourcesLoader;
 }

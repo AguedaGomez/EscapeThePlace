@@ -1,30 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ItemPanelDetailBehavior : MonoBehaviour
 {
-    public SpritesLoader spritesLoader;
-    public Image itemImage;
+    public GameObject itemDetailPanel;
     public Text itemDescription;
-    public Text itemImageText;
+    public PrefabsLoader prefabsLoader;
+
+    private GameObject activeItemPrefab;
 
     public void DisplayItemDetails(InventoryItem item)
     {
-        var sprites = spritesLoader.Sprites;
-        itemImage.sprite = sprites[item.name];
-        itemImage.SetNativeSize();
+        var itemPrefab = prefabsLoader.Prefabs[item.name];
+        activeItemPrefab = Instantiate(itemPrefab, itemDetailPanel.transform);
 
         itemDescription.text = item.description;
-        itemImageText.text = item.imageText;
         gameObject.SetActive(true);
     }
 
     public void OnCloseButtonClick()
     {
-        
         gameObject.SetActive(false);
-        itemImage.sprite = null;
+        Destroy(activeItemPrefab);
+        activeItemPrefab = null;
     }
 }

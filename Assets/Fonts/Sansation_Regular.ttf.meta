@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1722ecaccb4f1e34ebb4339f2f8ee621
+guid: 54039cecf3aee1341a897efd272bda09
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Mistral
+  fontName: Sansation
   fontNames:
-  - Mistral
+  - Sansation
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

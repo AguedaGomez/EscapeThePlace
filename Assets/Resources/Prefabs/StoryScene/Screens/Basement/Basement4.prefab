@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 391769018525044478}
   - component: {fileID: 8287947841947825621}
   m_Layer: 5
-  m_Name: StickerScreen
+  m_Name: Basement4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

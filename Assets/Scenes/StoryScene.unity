@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 341443426}
   - component: {fileID: 341443427}
+  - component: {fileID: 341443428}
   m_Layer: 0
   m_Name: StorySceneManager
   m_TagString: Untagged
@@ -163,7 +164,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9959d0f169a36b6428bfa645b1ecf703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  route: Prefabs/StoryScene
+  route: Prefabs/StoryScene/Screens
+--- !u!114 &341443428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341443425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a6dc178869a684f951779ede176304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1070275282}
+  prefabsLoader: {fileID: 341443427}
 --- !u!1 &815822763
 GameObject:
   m_ObjectHideFlags: 0

@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2966815fd9c0be94394a3d7233c0179e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 4196601329365468407, guid: d4e465a9974ee44458d1b459ff7923b5,
+  nextScene: {fileID: 6620809786777766376, guid: d4e465a9974ee44458d1b459ff7923b5,
     type: 3}
   activator: {fileID: 8523030206743252322}
 --- !u!114 &2614338089822242655
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2966815fd9c0be94394a3d7233c0179e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 7360636382119661592, guid: ad6a33b4d7e8a1f4a943f60225b1a53e,
+  nextScene: {fileID: 2225917416869480613, guid: ad6a33b4d7e8a1f4a943f60225b1a53e,
     type: 3}
   activator: {fileID: 5826543590734797370}
 --- !u!1 &1245549925703258674

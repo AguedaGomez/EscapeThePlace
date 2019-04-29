@@ -42,15 +42,16 @@ public class StorySceneManager : MonoBehaviour
 
     private void GetScreenSwitcher()
     {
-        var screenSwitcher = currentScreen.GetComponent<ScreenSwitcher>();
-        screenSwitcher.Initialize(this);
+        var screenSwitchers = currentScreen.GetComponents<ScreenSwitcher>();
+        for(int i = 0; i < screenSwitchers.Length; i++)
+            screenSwitchers[i].Initialize(this);
     }
 
     private void LoadScreen()
     {
         //Depends on beacon lecture
         //prefabsLoader.route += nameScreen
-        prefabsLoader.route += "/" + "kitchen/kitchen1";
+        prefabsLoader.route += "/" + "basement/basement4a";
         CreateScreen(prefabsLoader.Prefab);
     }
 

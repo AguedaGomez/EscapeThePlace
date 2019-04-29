@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 667301616270038359}
   - component: {fileID: 667301616270038358}
   - component: {fileID: 1704584212850182717}
+  - component: {fileID: 2614338089822242655}
   m_Layer: 5
   m_Name: Basement3
   m_TagString: Untagged
@@ -166,6 +167,21 @@ MonoBehaviour:
   nextScene: {fileID: 4196601329365468407, guid: d4e465a9974ee44458d1b459ff7923b5,
     type: 3}
   activator: {fileID: 8523030206743252322}
+--- !u!114 &2614338089822242655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667301616270038440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2966815fd9c0be94394a3d7233c0179e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: {fileID: 7360636382119661592, guid: ad6a33b4d7e8a1f4a943f60225b1a53e,
+    type: 3}
+  activator: {fileID: 5826543590734797370}
 --- !u!1 &1245549925703258674
 GameObject:
   m_ObjectHideFlags: 0

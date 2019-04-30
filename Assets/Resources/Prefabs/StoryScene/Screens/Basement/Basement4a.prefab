@@ -747,7 +747,10 @@ GameObject:
   - component: {fileID: 8508031251763447477}
   - component: {fileID: 3310739499648741491}
   - component: {fileID: 5679150177021914750}
-  - component: {fileID: 2473500690505344660}
+  - component: {fileID: 6038209389535974454}
+  - component: {fileID: 6938620896508188933}
+  - component: {fileID: 173672053558792166}
+  - component: {fileID: 8558400775246568857}
   m_Layer: 5
   m_Name: Basement4a
   m_TagString: Untagged
@@ -815,7 +818,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &2473500690505344660
+--- !u!114 &6038209389535974454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -824,12 +827,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 2225917416869480613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2966815fd9c0be94394a3d7233c0179e, type: 3}
+  m_Script: {fileID: 11500000, guid: 83043b2e041c0d94c9c79d4bcb38366b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 667301616270038440, guid: d80780cc3b422a4468a769722be14540,
+  activator: {fileID: 0}
+  button: {fileID: 3314645706919614074}
+--- !u!114 &6938620896508188933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2225917416869480613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c187172bc3b9945bd4ada0cdd04cb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 6038209389535974454}
+  nextScreen: {fileID: 667301616270038440, guid: d80780cc3b422a4468a769722be14540,
     type: 3}
-  activator: {fileID: 3314645706919614074}
+--- !u!114 &173672053558792166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2225917416869480613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07534ea9e53b02f47ac4df3312df126c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 0}
+--- !u!114 &8558400775246568857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2225917416869480613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c187172bc3b9945bd4ada0cdd04cb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 173672053558792166}
+  nextScreen: {fileID: 2425183776530168310, guid: 698b39785aa6d804eb266b643926c810,
+    type: 3}
 --- !u!1 &2546879566550677273
 GameObject:
   m_ObjectHideFlags: 0

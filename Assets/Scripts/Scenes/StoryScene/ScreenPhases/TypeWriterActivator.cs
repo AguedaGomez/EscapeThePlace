@@ -1,20 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TypeWritterEffect : MonoBehaviour
+public class TypeWriterActivator : ScreenPhase
 {
-    public float speed = 0.1f;    
+    public float speed = 0.05f;
     public Text textBox;
-    public delegate void TypeWritter();
-    public event TypeWritter EffectIsFinish;
 
     private string currentText = "";
     private string fullText;
     private Coroutine effect;
 
-    void Start()
+    protected override void InitPhase()
     {
         fullText = textBox.text;
         textBox.text = "";
@@ -28,16 +27,16 @@ public class TypeWritterEffect : MonoBehaviour
             currentText = fullText.Substring(0, i);
             textBox.text = currentText;
             yield return new WaitForSeconds(speed);
-            
+
         }
-        EffectIsFinish();
+        NotifyPhaseFinished();
     }
 
     public void CancelEffect()
     {
         StopCoroutine(effect);
         textBox.text = fullText;
-        EffectIsFinish();
-         
+        NotifyPhaseFinished();
+
     }
 }

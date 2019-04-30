@@ -16,43 +16,12 @@ public class StorySceneManager : MonoBehaviour
         LoadScreen();
     }
 
-    public void CreateScreen(GameObject prefab)
-    {
-        if (currentScreen)
-        {
-            Destroy(currentScreen);
-        } 
-        currentScreen = Instantiate(prefab, canvas.transform);
-        if (currentScreen.tag == "Text")
-        {
-            var typeWritterEffect = currentScreen.transform.Find("TextBoxBg").Find("Text").GetComponent<TypeWritterEffect>();
-            typeWritterEffect.EffectIsFinish += TypeWritterEffect_EffectIsFinish;
-        }
-        else
-        {
-            GetScreenSwitcher();
-        }
-
-    }
-
-    private void TypeWritterEffect_EffectIsFinish()
-    {
-        GetScreenSwitcher();
-    }
-
-    private void GetScreenSwitcher()
-    {
-        var screenSwitchers = currentScreen.GetComponents<ScreenSwitcher>();
-        for(int i = 0; i < screenSwitchers.Length; i++)
-            screenSwitchers[i].Initialize(this);
-    }
-
     private void LoadScreen()
     {
         //Depends on beacon lecture
         //prefabsLoader.route += nameScreen
-        prefabsLoader.route += "/" + "basement/basement4a";
-        CreateScreen(prefabsLoader.Prefab);
+        prefabsLoader.route += "/" + "basement/basement1";
+        Instantiate(prefabsLoader.Prefab, canvas.transform);
     }
 
 

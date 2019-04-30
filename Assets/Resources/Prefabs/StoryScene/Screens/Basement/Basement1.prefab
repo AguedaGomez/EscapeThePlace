@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 2411551653910501360}
   - component: {fileID: 2411551653910501366}
   - component: {fileID: 2411551653910501361}
-  - component: {fileID: 7385434887803176267}
+  - component: {fileID: 6769183796948400561}
+  - component: {fileID: 2530132151764489358}
+  - component: {fileID: 6761240102428212554}
   m_Layer: 5
   m_Name: Basement1
   m_TagString: Text
@@ -78,7 +80,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &7385434887803176267
+--- !u!114 &6769183796948400561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,12 +89,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 2411551653910501363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2966815fd9c0be94394a3d7233c0179e, type: 3}
+  m_Script: {fileID: 11500000, guid: df2df8c52a0db6f4d87830118dccafb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 2576170094436699838, guid: 89bf8337e25f33846b8163a5f6e28d20,
+  activator: {fileID: 0}
+  speed: 0.05
+  textBox: {fileID: 2257905441841973709}
+--- !u!114 &2530132151764489358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2411551653910501363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83043b2e041c0d94c9c79d4bcb38366b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 6769183796948400561}
+  button: {fileID: 5246637695364341371}
+--- !u!114 &6761240102428212554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2411551653910501363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c187172bc3b9945bd4ada0cdd04cb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 2530132151764489358}
+  nextScreen: {fileID: 2576170094436699838, guid: 89bf8337e25f33846b8163a5f6e28d20,
     type: 3}
-  activator: {fileID: 5246637695364341371}
 --- !u!1 &2411551654585405520
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,12 +389,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
-      propertyPath: m_Text
-      value: "El eco de tus propios pasos eriza tu piel cuando te acercas a los trasteros.
-        Manoseas las puertas tratando de encontrar el picaporte, abres la puerta y
-        accedes a una sala algo m\xE1s amplia."
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6769183796948400561}
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CancelEffect
       objectReference: {fileID: 0}
     - target: {fileID: 4163112830662617094, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
@@ -372,7 +406,15 @@ PrefabInstance:
         Manoseas las puertas tratando de encontrar el picaporte. Al fin, abres una
         de ellas y accedes a una sala algo m\xE1s amplia."
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_Text
+      value: "El eco de tus propios pasos eriza tu piel cuando te acercas a los trasteros.
+        Manoseas las puertas tratando de encontrar el picaporte, abres la puerta y
+        accedes a una sala algo m\xE1s amplia."
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4163112830662617094, guid: 3a2c7cb39338618479030a6adb32192e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a2c7cb39338618479030a6adb32192e, type: 3}
 --- !u!224 &4661496470687260127 stripped
 RectTransform:
@@ -390,5 +432,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2257905441841973709 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5480215805036352709}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

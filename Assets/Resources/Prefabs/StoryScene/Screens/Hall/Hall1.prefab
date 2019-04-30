@@ -204,7 +204,9 @@ GameObject:
   - component: {fileID: 3300086499834500912}
   - component: {fileID: 1335739885928173103}
   - component: {fileID: 4818773499275079242}
-  - component: {fileID: 1374142616492426112}
+  - component: {fileID: 5208737564033014922}
+  - component: {fileID: 7581261876878730663}
+  - component: {fileID: 8038047524396020599}
   m_Layer: 5
   m_Name: Hall1
   m_TagString: Text
@@ -271,7 +273,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1374142616492426112
+--- !u!114 &5208737564033014922
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,12 +282,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 3869255538241643803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2966815fd9c0be94394a3d7233c0179e, type: 3}
+  m_Script: {fileID: 11500000, guid: df2df8c52a0db6f4d87830118dccafb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 364160723207707819, guid: fb014e6b5f4d00942b7c85613b6db65e,
+  activator: {fileID: 0}
+  speed: 0.05
+  textBox: {fileID: 9121004324688072025}
+--- !u!114 &7581261876878730663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869255538241643803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83043b2e041c0d94c9c79d4bcb38366b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 5208737564033014922}
+  button: {fileID: 2958351746786761455}
+--- !u!114 &8038047524396020599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869255538241643803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c187172bc3b9945bd4ada0cdd04cb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 7581261876878730663}
+  nextScreen: {fileID: 364160723207707819, guid: fb014e6b5f4d00942b7c85613b6db65e,
     type: 3}
-  activator: {fileID: 2958351746786761455}
 --- !u!1001 &3300086499404435537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -403,15 +434,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
-      propertyPath: m_Text
-      value: "El edificio est\xE1 en completo silencio, salvo por algunos ruidos sutiles
-        que te llaman la atenci\xF3n, oblig\xE1ndote a pensar si hay alguien m\xE1s
-        en el edificio. Piensas en pegar un grito a ver si queda alguien m\xE1s, pero
-        tu institno te dice que ser\xE1 mejor que no lo hagas. Llegas a la puerta
-        de salida, te acercas pero la puerta no se abre. La corriente tampoco est\xE1
-        alimentando a los motores que deber\uF8EE abrirla."
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5208737564033014922}
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CancelEffect
       objectReference: {fileID: 0}
     - target: {fileID: 4163112830662617094, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
@@ -425,6 +456,16 @@ PrefabInstance:
         que te llaman la atenci\xF3n, oblig\xE1ndote a pensar si hay alguien m\xE1s
         en el edificio. Piensas en pegar alg\xFAn grito a ver si queda alguien m\xE1s,
         pero tu instinto te dice que ser\xE1 mejor que no lo hagas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_Text
+      value: "El edificio est\xE1 en completo silencio, salvo por algunos ruidos sutiles
+        que te llaman la atenci\xF3n, oblig\xE1ndote a pensar si hay alguien m\xE1s
+        en el edificio. Piensas en pegar un grito a ver si queda alguien m\xE1s, pero
+        tu institno te dice que ser\xE1 mejor que no lo hagas. Llegas a la puerta
+        de salida, te acercas pero la puerta no se abre. La corriente tampoco est\xE1
+        alimentando a los motores que deber\uF8EE abrirla."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a2c7cb39338618479030a6adb32192e, type: 3}
@@ -462,5 +503,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9121004324688072025 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3300086499404435537}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

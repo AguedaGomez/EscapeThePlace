@@ -160,7 +160,8 @@ GameObject:
   - component: {fileID: 5638767921438122198}
   - component: {fileID: 4681962775498087810}
   - component: {fileID: 6651797022490332201}
-  - component: {fileID: 1325376343378699}
+  - component: {fileID: 235681464775419741}
+  - component: {fileID: 1710209045161199924}
   m_Layer: 5
   m_Name: Kitchen2
   m_TagString: Untagged
@@ -226,7 +227,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1325376343378699
+--- !u!114 &235681464775419741
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -235,12 +236,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 6161118754282364724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2966815fd9c0be94394a3d7233c0179e, type: 3}
+  m_Script: {fileID: 11500000, guid: 83043b2e041c0d94c9c79d4bcb38366b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 3504542545362165996, guid: dc3b215a074371842bced3a2aab207ec,
+  activator: {fileID: 0}
+  button: {fileID: 2659903016473469214}
+--- !u!114 &1710209045161199924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6161118754282364724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c187172bc3b9945bd4ada0cdd04cb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 235681464775419741}
+  nextScreen: {fileID: 3504542545362165996, guid: dc3b215a074371842bced3a2aab207ec,
     type: 3}
-  activator: {fileID: 2659903016473469214}
 --- !u!1 &7063795732251663480
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,9 +16,7 @@ public class PuzzleActivator : ScreenPhase
 
     public void CheckSolution()
     {
-        if (true /* Superado */)
-        {
-            NotifyPhaseFinished();
-        }
+        NotifyPhaseFinished();
+
     }
 }

@@ -8,11 +8,14 @@ public class NumericPanelBehaviour : MonoBehaviour
     public Text screenText;
     public string correctCode;
     public int lenghtCode;
+    public GameObject parentPanel;
+
+    private PuzzleActivator puzzleActivator;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        puzzleActivator = parentPanel.GetComponent<PuzzleActivator>();
     }
 
    public void OnNumericButtonClick(Text value)
@@ -33,7 +36,7 @@ public class NumericPanelBehaviour : MonoBehaviour
     private void CheckCode()
     {
         if (screenText.text == correctCode)
-            print("códicoCorrecto");
+            puzzleActivator.CheckSolution();
         else
         {
             print("códigoIncorrecto");

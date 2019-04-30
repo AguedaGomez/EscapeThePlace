@@ -429,9 +429,9 @@ RectTransform:
   - {fileID: 2974751600447391440}
   - {fileID: 3422307845447812267}
   - {fileID: 5406051123725083341}
-  - {fileID: 6213053568568926982}
-  - {fileID: 6974640611697268693}
   - {fileID: 8698481374365864258}
+  - {fileID: 6974640611697268693}
+  - {fileID: 6213053568568926982}
   m_Father: {fileID: 8023274294276105473}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -976,10 +976,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b906755ff5ec442a836d15b2b6c86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activator: {fileID: 0}
   screenText: {fileID: 7786598599376787348}
   correctCode: 7865
   lenghtCode: 4
-  parentPanel: {fileID: 5235634559299850515}
+  redLight: {fileID: 4059560486531127816}
+  greenLight: {fileID: 8948636300011538037}
+  redLightOff: {fileID: 21300000, guid: 78e03f08712c41a4db5332da6196e0b1, type: 3}
+  greenLightOff: {fileID: 21300000, guid: c16248638ab7c82498556a5f4887500d, type: 3}
+  redLightOn: {fileID: 21300000, guid: 523cb8a705418a3439109772310851c3, type: 3}
+  greenLightOn: {fileID: 21300000, guid: 41555c84a6b11d54eb5b0877c776a8b2, type: 3}
 --- !u!1 &2985811441733791213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,7 +1246,7 @@ RectTransform:
   m_Children:
   - {fileID: 3005311215090676365}
   m_Father: {fileID: 8488746494751235092}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1781,7 +1787,7 @@ RectTransform:
   m_Children:
   - {fileID: 3691387869364277282}
   m_Father: {fileID: 8488746494751235092}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1912,7 +1918,6 @@ GameObject:
   - component: {fileID: 2810080324351505162}
   - component: {fileID: 3369736038647128784}
   - component: {fileID: 1085217495129048071}
-  - component: {fileID: 6227517956338457833}
   - component: {fileID: 6281435248936601098}
   m_Layer: 5
   m_Name: Hall4
@@ -1980,19 +1985,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &6227517956338457833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5235634559299850515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07534ea9e53b02f47ac4df3312df126c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activator: {fileID: 0}
 --- !u!114 &6281435248936601098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2005,7 +1997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c187172bc3b9945bd4ada0cdd04cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activator: {fileID: 6227517956338457833}
+  activator: {fileID: 4020951165342034720}
   nextScreen: {fileID: 779305030907673506, guid: 22aedf9c156ae75479d21e32d787d7dc,
     type: 3}
 --- !u!1 &5813548136500359583
@@ -2018,7 +2010,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1752542874999744540}
   - component: {fileID: 2371744340200725858}
-  - component: {fileID: 4985173631495779632}
+  - component: {fileID: 4059560486531127816}
   m_Layer: 5
   m_Name: RedLight
   m_TagString: Untagged
@@ -2053,7 +2045,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5813548136500359583}
   m_CullTransparentMesh: 0
---- !u!114 &4985173631495779632
+--- !u!114 &4059560486531127816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2075,7 +2067,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 78e03f08712c41a4db5332da6196e0b1, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3470,7 +3462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -12}
   m_SizeDelta: {x: -80, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5069453813533316557
@@ -3494,7 +3486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.29307583, g: 0.32815778, b: 0.6981132, a: 1}
+  m_Color: {r: 0.26699895, g: 0.754717, b: 0.5784412, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3502,12 +3494,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5fb4879cd5bf1f049af948a3d8a47113, type: 3}
-    m_FontSize: 134
+    m_Font: {fileID: 12800000, guid: 32399aa2577dc1244851992443105fd1, type: 3}
+    m_FontSize: 162
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 137
+    m_MaxSize: 204
     m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1

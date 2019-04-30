@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NumericPanelBehaviour : MonoBehaviour
+public class NumericPanelBehaviour : ScreenPhase
 {
     public Text screenText;
     public string correctCode;
     public int lenghtCode;
-    public GameObject parentPanel;
+    public Image redLight;
+    public Image greenLight;
+    public Sprite redLightOff;
+    public Sprite greenLightOff;
+    public Sprite redLightOn;
+    public Sprite greenLightOn;
 
-    private PuzzleActivator puzzleActivator;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        puzzleActivator = parentPanel.GetComponent<PuzzleActivator>();
-    }
 
    public void OnNumericButtonClick(Text value)
    {
@@ -36,11 +34,32 @@ public class NumericPanelBehaviour : MonoBehaviour
     private void CheckCode()
     {
         if (screenText.text == correctCode)
-            puzzleActivator.CheckSolution();
+            StartCoroutine(TurnGreenLightOn());
         else
         {
-            print("códigoIncorrecto");
+            StartCoroutine(TurnRedLightOn());
             ClearCode();
         }
+    }
+    IEnumerator TurnRedLightOn()
+    {
+        
+        yield return TurnLightOn(redLight, redLightOn, redLightOff);
+        
+    }
+
+    IEnumerator TurnGreenLightOn()
+    {
+        yield return TurnLightOn(greenLight, greenLightOn, greenLightOff);
+        NotifyPhaseFinished();
+    }
+    IEnumerator TurnLightOn(Image lightImage, Sprite lightOnSprite, Sprite lightOffSprite)
+    {
+        lightImage.sprite = lightOnSprite;
+        lightImage.SetNativeSize();
+        yield return new WaitForSeconds(1);
+        lightImage.sprite = null;
+        lightImage.sprite = lightOffSprite;
+        lightImage.SetNativeSize();
     }
 }

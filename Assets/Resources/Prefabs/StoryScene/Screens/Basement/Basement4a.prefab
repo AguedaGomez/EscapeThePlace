@@ -749,7 +749,6 @@ GameObject:
   - component: {fileID: 5679150177021914750}
   - component: {fileID: 6038209389535974454}
   - component: {fileID: 6938620896508188933}
-  - component: {fileID: 173672053558792166}
   - component: {fileID: 8558400775246568857}
   m_Layer: 5
   m_Name: Basement4a
@@ -847,19 +846,6 @@ MonoBehaviour:
   activator: {fileID: 6038209389535974454}
   nextScreen: {fileID: 667301616270038440, guid: d80780cc3b422a4468a769722be14540,
     type: 3}
---- !u!114 &173672053558792166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2225917416869480613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07534ea9e53b02f47ac4df3312df126c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activator: {fileID: 0}
 --- !u!114 &8558400775246568857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,7 +858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c187172bc3b9945bd4ada0cdd04cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activator: {fileID: 173672053558792166}
+  activator: {fileID: 5005620829112143623}
   nextScreen: {fileID: 2425183776530168310, guid: 698b39785aa6d804eb266b643926c810,
     type: 3}
 --- !u!1 &2546879566550677273
@@ -2379,12 +2365,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 285dc657b054e684c99aad3e767908f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activator: {fileID: 0}
   correctList:
   - {fileID: 1427879125564647792}
   - {fileID: 8937936829856657158}
   - {fileID: 7181419050519011781}
   - {fileID: 1924188885203143856}
-  panelParent: {fileID: 2225917416869480613}
   currentList: []
 --- !u!1 &7511584608219189225
 GameObject:

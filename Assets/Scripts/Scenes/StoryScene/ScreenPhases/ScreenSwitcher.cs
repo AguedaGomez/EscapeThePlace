@@ -6,7 +6,7 @@ public class ScreenSwitcher : ScreenPhase
 {
     public GameObject nextScreen;
 
-    protected override void InitPhase()
+    public override void InitPhase()
     {
         Instantiate(nextScreen, transform.parent);
         Destroy(gameObject);

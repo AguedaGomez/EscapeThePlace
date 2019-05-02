@@ -13,7 +13,7 @@ public class TypeWriterActivator : ScreenPhase
     private string fullText;
     private Coroutine effect;
 
-    protected override void InitPhase()
+    public override void InitPhase()
     {
         fullText = textBox.text;
         textBox.text = "";

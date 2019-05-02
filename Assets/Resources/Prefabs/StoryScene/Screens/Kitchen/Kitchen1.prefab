@@ -284,6 +284,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TextBoxBg
       objectReference: {fileID: 0}
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4359837067450838291}
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CancelEffect
+      objectReference: {fileID: 0}
     - target: {fileID: 917983815335495962, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -389,6 +399,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_Text
+      value: "La luz del exterior ilumina parcialmente la sala donde almuerzas a diario.
+        Quiz\xE1, en los armarios, encuentres algo que te resulte \xFAtil."
+      objectReference: {fileID: 0}
     - target: {fileID: 4163112830662617094, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
       propertyPath: speed
@@ -400,12 +416,6 @@ PrefabInstance:
       value: "La luz del exterior ilumina parcialmente la sala donde almuerzas a diario.
         Quiz\xE1, rebuscando entre los armarios, encuentres alg\xFAn objeto que podr\xEDa
         serte \xFAtil."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
-        type: 3}
-      propertyPath: m_Text
-      value: "La luz del exterior ilumina parcialmente la sala donde almuerzas a diario.
-        Quiz\xE1, en los armarios, encuentres algo que te resulte \xFAtil."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a2c7cb39338618479030a6adb32192e, type: 3}

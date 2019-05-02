@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryItemActivator : ButtonActivator
 {
-    protected override void InitPhase()
+    public Image itemSprite;
+
+    private InventoryRepository inventoryRepository;
+    private GameItems gameItems;
+
+    public override void InitPhase()
     {
         DisplayNewItemObtainedPopup();
+        inventoryRepository = new InventoryRepository(); //Eliminar
+        gameItems = new GameItems();
         AddItemToInventory();
         base.InitPhase();
     }
@@ -18,6 +26,7 @@ public class InventoryItemActivator : ButtonActivator
 
     private void AddItemToInventory()
     {
-        // Guardar item en el inventario
+        var newItem = gameItems.GetInventoryItem(itemSprite.sprite.name);
+        inventoryRepository.AddItem(newItem);
     }
 }

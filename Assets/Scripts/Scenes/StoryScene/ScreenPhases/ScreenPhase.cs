@@ -18,7 +18,7 @@ public abstract class ScreenPhase: MonoBehaviour
         }
     }
 
-    protected virtual void InitPhase() { }
+    public virtual void InitPhase() { }
 
     protected void NotifyPhaseFinished()
     {

@@ -6,7 +6,7 @@ public class ButtonActivator : ScreenPhase
 {
     public Button button;
 
-    protected override void InitPhase()
+    public override void InitPhase()
     {
         AddClickListener();
     }

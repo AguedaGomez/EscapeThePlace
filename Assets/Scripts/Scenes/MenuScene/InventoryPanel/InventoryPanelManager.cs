@@ -29,6 +29,15 @@ public class InventoryPanelManager : MonoBehaviour
         DisplayEmptyItems(emptySlots);
     }
 
+    public void Show()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        gameObject.SetActive(false);
+    }
     private void DisplayPlayerItems(List<InventoryItem> items)
     {
         foreach (var item in items)

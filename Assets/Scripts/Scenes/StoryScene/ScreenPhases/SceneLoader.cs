@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneLoader : ScreenPhase
 {
-    protected override void InitPhase()
+    public string nameScene;
+    public override void InitPhase()
     {
-        // Cargar otra escena
+        SceneManager.LoadScene(nameScene);
     }
 }

@@ -20,7 +20,7 @@ public class StorySceneManager : MonoBehaviour
     {
         //Depends on beacon lecture
         //prefabsLoader.route += nameScreen
-        prefabsLoader.route += "/" + "hall/hall4";
+        prefabsLoader.route += "/" + "basement/basement1";
         Instantiate(prefabsLoader.Prefab, canvas.transform);
     }
 

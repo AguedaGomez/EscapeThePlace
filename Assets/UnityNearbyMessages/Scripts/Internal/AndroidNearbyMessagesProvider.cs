@@ -10,25 +10,29 @@ namespace NearbyMessages.Internal
 
         public AndroidNearbyMessagesProvider()
         {
-            CheckPermissions();
-            _nearbyMessages = new AndroidJavaObject("es.agonper.unitynearbymessages.NearbyMessages");
+            Init();
         }
 
         public void StartScan()
         {
-            _nearbyMessages.Call("startScan");
+            Init();
+            _nearbyMessages?.Call("startScan");
         }
 
         public void StopScan()
         {
-            _nearbyMessages.Call("stopScan");
+            _nearbyMessages?.Call("stopScan");
         }
 
-        private void CheckPermissions()
+        private void Init()
         {
-            if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation)) {
+            if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation))
+            {
                 Permission.RequestUserPermission(Permission.FineLocation);
+                return;
             }
+            if (_nearbyMessages != null) return;
+            _nearbyMessages = new AndroidJavaObject("es.agonper.unitynearbymessages.NearbyMessages");
         }
     }
 }

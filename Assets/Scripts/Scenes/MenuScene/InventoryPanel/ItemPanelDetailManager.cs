@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemPanelDetailBehavior : MonoBehaviour
+public class ItemPanelDetailManager : MonoBehaviour
 {
     public GameObject itemDetailPanel;
     public Text itemDescription;

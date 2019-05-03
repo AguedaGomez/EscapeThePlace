@@ -7,7 +7,7 @@ public class InventoryRepository : IInventoryRepository
     public InventoryRepository()
     {
         playerItems.Add(new InventoryItem(
-            "Lantern", 
+            "Lantern",
             "Una linternucha de pilas sulfatadas que todavía funciona para iluminar ligeramente algún objeto."
         ));
 
@@ -15,6 +15,11 @@ public class InventoryRepository : IInventoryRepository
             "Notes",
             "Como en cualquier trabajo el primer día llegaste con tu libreta y la mejor actitud del mundo. Apuntaste un montón de cosas, entre ellas algo que podría resultar útil."
         ));
+    }
+
+    public void AddItem(InventoryItem newInventoryItem)
+    {
+        playerItems.Add(newInventoryItem);
     }
 
     public List<InventoryItem> GetItems()

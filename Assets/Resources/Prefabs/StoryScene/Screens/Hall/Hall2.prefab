@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3512694833278548400
+--- !u!1001 &376186205324259067
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 3869255538241643803, guid: f644b91b4e077f141a20843fba243d4d,
         type: 3}
       propertyPath: m_Name
-      value: Hall2 Variant
+      value: Hall2
       objectReference: {fileID: 0}
     - target: {fileID: 3300086499834500912, guid: f644b91b4e077f141a20843fba243d4d,
         type: 3}
@@ -117,40 +117,18 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1443995356115531863, guid: f644b91b4e077f141a20843fba243d4d,
-        type: 3}
-      propertyPath: fullText
-      value: "Llegas a la puerta de salida, te acercas pero la puerta no se abre.
-        La corriente tampoco est\xE1 alimentando a los motores que deber\xEDan abrirla.
-        Justo al lado hay un panel num\xE9rico, no recordabas haberlo visto antes.
-        Un papel impreso muestra un mensaje que a duras penas eres capaz de leer:
-        \"Para abrir la puerta introducir el c\xF3digo de salida\". Observas el teclado
-        num\xE9rico sin tener claro si poner algo o no."
-      objectReference: {fileID: 0}
-    - target: {fileID: 9121004324688072025, guid: f644b91b4e077f141a20843fba243d4d,
-        type: 3}
-      propertyPath: m_Text
-      value: "Justo al lado hay un panel num\xE9rico, no recordabas haberlo visto
-        antes. Un papel impreso muestra un mensaje que a duras penas eres capaz de
-        leer: \"Para abrir la puerta introducir c\xF3digo de salida\". Observas el
-        teclado num\xE9rico sin tener claro si poner algo o no."
-      objectReference: {fileID: 0}
-    - target: {fileID: 9121004324688072025, guid: f644b91b4e077f141a20843fba243d4d,
-        type: 3}
-      propertyPath: m_FontData.m_BestFit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1374142616492426112, guid: f644b91b4e077f141a20843fba243d4d,
-        type: 3}
-      propertyPath: nextScene
-      value: 
-      objectReference: {fileID: 779305030907673506, guid: 22aedf9c156ae75479d21e32d787d7dc,
-        type: 3}
     - target: {fileID: 8038047524396020599, guid: f644b91b4e077f141a20843fba243d4d,
         type: 3}
       propertyPath: nextScreen
       value: 
-      objectReference: {fileID: 779305030907673506, guid: 22aedf9c156ae75479d21e32d787d7dc,
+      objectReference: {fileID: 364160723207707819, guid: fb014e6b5f4d00942b7c85613b6db65e,
         type: 3}
+    - target: {fileID: 9121004324688072025, guid: f644b91b4e077f141a20843fba243d4d,
+        type: 3}
+      propertyPath: m_Text
+      value: "Llegas a la puerta de salida, te acercas pero la puerta no se abre.
+        La corriente tampoco est\xE1 alimentando a los motores que deber\xEDan abrirla.
+        Justo al lado hay un panel num\xE9rico, no recordabas haberlo visto antes."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f644b91b4e077f141a20843fba243d4d, type: 3}

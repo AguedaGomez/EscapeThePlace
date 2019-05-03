@@ -117,11 +117,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8085411775456971295, guid: 117adc284fa953e4e8d10cf5765dd204,
+    - target: {fileID: 3514796365543093472, guid: 117adc284fa953e4e8d10cf5765dd204,
         type: 3}
-      propertyPath: nextScene
+      propertyPath: nextScreen
       value: 
-      objectReference: {fileID: 1809194317368092904}
+      objectReference: {fileID: 776820991230706633, guid: 8c4f332d3e3bdb9489d787bb1827328d,
+        type: 3}
     - target: {fileID: 9066948080611794564, guid: 117adc284fa953e4e8d10cf5765dd204,
         type: 3}
       propertyPath: m_Text
@@ -129,6 +130,11 @@ PrefabInstance:
         de ti te est\xE1 avisando de que lo mejor ser\xE1 que salgas cuanto antes
         del edificio. Con cuidado te diriges hacia la puerta principal del edificio."
       objectReference: {fileID: 0}
+    - target: {fileID: 8085411775456971295, guid: 117adc284fa953e4e8d10cf5765dd204,
+        type: 3}
+      propertyPath: nextScene
+      value: 
+      objectReference: {fileID: 1809194317368092904}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 117adc284fa953e4e8d10cf5765dd204, type: 3}
 --- !u!1 &1809194317368092904 stripped

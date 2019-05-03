@@ -2,20 +2,22 @@
 
 public class InventoryRepository : IInventoryRepository
 {
+    public static InventoryRepository Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = new InventoryRepository();
+            }
+            return _instance;
+        }
+    }
+    private static InventoryRepository _instance;
+
     private List<InventoryItem> playerItems = new List<InventoryItem>();
 
-    public InventoryRepository()
-    {
-        playerItems.Add(new InventoryItem(
-            "Lantern",
-            "Una linternucha de pilas sulfatadas que todavía funciona para iluminar ligeramente algún objeto."
-        ));
-
-        playerItems.Add(new InventoryItem(
-            "Notes",
-            "Como en cualquier trabajo el primer día llegaste con tu libreta y la mejor actitud del mundo. Apuntaste un montón de cosas, entre ellas algo que podría resultar útil."
-        ));
-    }
+    private InventoryRepository() { }
 
     public void AddItem(InventoryItem newInventoryItem)
     {

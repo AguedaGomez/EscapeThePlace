@@ -2,8 +2,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryItemBehavior : MonoBehaviour
+public class InventoryItemPrefab : MonoBehaviour
 {
+
     public Image imageComponent;
     private InventoryItem inventoryItem;
 

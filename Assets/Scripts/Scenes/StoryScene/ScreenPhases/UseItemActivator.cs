@@ -7,7 +7,7 @@ public class UseItemActivator : ScreenPhase
 {
     public Button button;
     public string correctItemName;
-    public ItemPanelDetailBehavior itemPanelDetailBehaviour;
+    public ItemPanelDetailManager itemPanelDetailBehaviour;
     public GameObject inventoryPanel;
 
     public ScreenPhase wrongItemPhase;

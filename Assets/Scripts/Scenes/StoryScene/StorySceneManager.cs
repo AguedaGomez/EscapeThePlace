@@ -18,10 +18,9 @@ public class StorySceneManager : MonoBehaviour
 
     private void LoadScreen()
     {
-        //Depends on beacon lecture
-        //prefabsLoader.route += nameScreen
-        prefabsLoader.route += "/" + "hall/hall6";
-        Instantiate(prefabsLoader.Prefab, canvas.transform);
+        var sceneName = GameState.Instance.currentPlace;
+        var prefab = prefabsLoader.Prefab($"{sceneName}/{sceneName}1");
+        Instantiate(prefab, canvas.transform);
     }
 
 

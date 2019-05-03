@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryPanelManager : MonoBehaviour
+public class InventoryPanelManager : PanelManager
 {
 
     public GameObject itemsGrid;
@@ -11,39 +11,41 @@ public class InventoryPanelManager : MonoBehaviour
     public int capacity;
 
     public SpritesLoader spritesLoader;
-    public ItemPanelDetailBehavior itemPanelDetail;
+    public ItemPanelDetailManager itemPanelDetail;
 
     private IInventoryRepository itemsRepository;
     private Dictionary<string, Sprite> itemSprites;
+    private List<GameObject> displayedItems = new List<GameObject>();
 
-    // Start is called before the first frame update
-    void Start()
+    public override void Show()
     {
-        itemsRepository = new InventoryRepository();
-        itemSprites = spritesLoader.Sprites;
-
+        Init();
         var playerItems = itemsRepository.GetItems();
         var emptySlots = capacity - playerItems.Count;
 
         DisplayPlayerItems(playerItems);
         DisplayEmptyItems(emptySlots);
+        base.Show();
     }
 
-    public void Show()
+    public override void Hide()
     {
-        gameObject.SetActive(true);
+        ClearItems();
+        base.Hide();
     }
 
-    public void Hide()
+    private void Init()
     {
-        gameObject.SetActive(false);
+        itemsRepository = InventoryRepository.Instance;
+        itemSprites = spritesLoader.Sprites;
     }
+    
     private void DisplayPlayerItems(List<InventoryItem> items)
     {
         foreach (var item in items)
         {
-            var uiItem = Instantiate(inventoryItem, itemsGrid.transform);
-            var behaviour = uiItem.GetComponent<InventoryItemBehavior>();
+            var uiItem = DisplayItem(inventoryItem);
+            var behaviour = uiItem.GetComponent<InventoryItemPrefab>();
             behaviour.SetItem(item);
             behaviour.SetImage(itemSprites[item.name]);
             behaviour.SetOnClick(itemPanelDetail.DisplayItemDetails);
@@ -54,7 +56,23 @@ public class InventoryPanelManager : MonoBehaviour
     {
         for (int i = 0; i < empties; i++)
         {
-            Instantiate(emptyItem, itemsGrid.transform);
+            DisplayItem(emptyItem);
         }
+    }
+
+    private GameObject DisplayItem(GameObject prefab)
+    {
+        var item = Instantiate(prefab, itemsGrid.transform);
+        displayedItems.Add(item);
+        return item;
+    }
+
+    private void ClearItems()
+    {
+        foreach (var item in displayedItems)
+        {
+            Destroy(item);
+        }
+        displayedItems.Clear();
     }
 }

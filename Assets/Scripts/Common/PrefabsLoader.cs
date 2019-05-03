@@ -17,16 +17,13 @@ public class PrefabsLoader : MonoBehaviour
         }
     }
 
-    public GameObject Prefab
+    public GameObject Prefab(string path)
     {
-        get
+        if (_resourcesLoader == null)
         {
-            if (_resourcesLoader == null)
-            {
-                _resourcesLoader = new ResourcesLoader<GameObject>(route);
-            }
-            return _resourcesLoader.LoadedResource;
+            _resourcesLoader = new ResourcesLoader<GameObject>(route);
         }
+        return _resourcesLoader.LoadResource(path);
     }
 
     private ResourcesLoader<GameObject> _resourcesLoader;

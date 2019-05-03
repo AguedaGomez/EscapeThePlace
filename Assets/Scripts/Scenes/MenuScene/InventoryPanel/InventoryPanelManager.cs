@@ -36,22 +36,10 @@ public class InventoryPanelManager : PanelManager
 
     private void Init()
     {
-        if (itemsRepository == null)
-        {
-            itemsRepository = new InventoryRepository(); // Replace with singleton
-        }
+        itemsRepository = InventoryRepository.Instance;
         itemSprites = spritesLoader.Sprites;
     }
-
-    public void Show()
-    {
-        gameObject.SetActive(true);
-    }
-
-    public void Hide()
-    {
-        gameObject.SetActive(false);
-    }
+    
     private void DisplayPlayerItems(List<InventoryItem> items)
     {
         foreach (var item in items)

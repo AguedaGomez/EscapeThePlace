@@ -6,23 +6,23 @@ using NearbyMessages;
 
 public class NearbyPlacePanelManager : PanelManager
 {
-    public NearbyMessagesEventSystem nearbyMessages;
     public Text text;
 
+    private NearbyMessagesEventSystem _nearbyMessages;
     private Dictionary<string, string> _placeLabels;
     private string _currentPlace;
 
     public void Show(string placeName)
     {
         Init();
-        nearbyMessages.OnNearbyMessageLost += OnSceneOutOfRange;
+        _nearbyMessages.OnNearbyMessageLost += OnSceneOutOfRange;
         DisplayPlace(placeName);
         base.Show();
     }
 
     public override void Hide()
     {
-        nearbyMessages.OnNearbyMessageLost -= OnSceneOutOfRange;
+        _nearbyMessages.OnNearbyMessageLost -= OnSceneOutOfRange;
         base.Hide();
     }
 
@@ -35,6 +35,7 @@ public class NearbyPlacePanelManager : PanelManager
     private void Init()
     {
         if (_placeLabels != null) return;
+        _nearbyMessages = NearbyMessagesEventSystem.Instance;
         _placeLabels = new Dictionary<string, string>
         {
             { "Kitchen", "la cocina" },

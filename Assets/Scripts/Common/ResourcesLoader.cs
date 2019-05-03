@@ -20,18 +20,8 @@ public class ResourcesLoader<T> where T : Object
         }
     }
 
-    public T LoadedResource
-    {
-        get
-        {
-            LoadResource();
-            return _resource;
-        }
-    }
-
     private readonly string _route;
     private readonly Dictionary<string, T> _resources = new Dictionary<string, T>();
-    private T _resource;
 
     private void LoadResources()
     {
@@ -42,8 +32,8 @@ public class ResourcesLoader<T> where T : Object
         }
     }
 
-    private void LoadResource()
+    public T LoadResource(string path)
     {
-        _resource = Resources.Load<T>(_route);
+        return Resources.Load<T>(_route + "/" + path);
     }
 }

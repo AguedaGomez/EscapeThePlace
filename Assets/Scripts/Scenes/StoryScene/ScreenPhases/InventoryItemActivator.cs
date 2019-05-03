@@ -13,7 +13,7 @@ public class InventoryItemActivator : ButtonActivator
     public override void InitPhase()
     {
         DisplayNewItemObtainedPopup();
-        inventoryRepository = new InventoryRepository(); //Eliminar
+        inventoryRepository = InventoryRepository.Instance;
         gameItems = new GameItems();
         AddItemToInventory();
         base.InitPhase();

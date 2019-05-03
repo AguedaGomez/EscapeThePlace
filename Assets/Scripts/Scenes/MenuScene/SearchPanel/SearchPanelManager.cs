@@ -1,27 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using NearbyMessages;
 
 public class SearchPanelManager : PanelManager
 {
-    public NearbyMessagesEventSystem nearbyMessages;
-    public NearbyPlacePanelManager nearbyPlacePanel;
+//    public NearbyPlacePanelManager nearbyPlacePanel;
     public PanelManager nearbyPlaceNotFoundPanel;
+    public string sceneToLoad;
     public int searchTimeout;
 
+    private NearbyMessagesEventSystem _nearbyMessages;
     private Coroutine _timeout;
 
     public override void Show()
     {
-        nearbyMessages.OnNearbyMessageFound += OnPlaceNearby;
+        _nearbyMessages = NearbyMessagesEventSystem.Instance;
+        _nearbyMessages.OnNearbyMessageFound += OnPlaceNearby;
         base.Show();
         _timeout = StartCoroutine(SearchTimeout());
     }
 
     public override void Hide()
     {
-        nearbyMessages.OnNearbyMessageFound -= OnPlaceNearby;
+        _nearbyMessages.OnNearbyMessageFound -= OnPlaceNearby;
         CancelTimeout();
         base.Hide();
     }
@@ -37,7 +40,8 @@ public class SearchPanelManager : PanelManager
     private void OnPlaceNearby(NearbyMessage message)
     {
         Hide();
-        nearbyPlacePanel.Show(message.Content);
+        GameState.Instance.currentPlace = message.Content;
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     private void CancelTimeout()

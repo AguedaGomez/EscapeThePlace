@@ -7,17 +7,18 @@ public class VirtualDevicesManager : MonoBehaviour
 {
     private static readonly float TIME_BETWEEN_DEVICE_CHANGES = 1.0f;
 
-    public NearbyMessagesEventSystem nearbyMessages;
     public GameObject virtualDevicesContainer;
     public GameObject virtualDevicePrefab;
     public List<NearbyVirtualDevice> possibleNearbyDevices = new List<NearbyVirtualDevice>();
 
+    private NearbyMessagesEventSystem _nearbyMessages;
     private VirtualNearbyMessagesProvider _virtualNearbyProvider;
 
     private float timeUntilNextDeviceUpdate;
 
     void Start()
     {
+        _nearbyMessages = NearbyMessagesEventSystem.Instance;
         _virtualNearbyProvider = VirtualNearbyMessagesProvider.Instance;
         _virtualNearbyProvider.OnMessageFound += OnProviderMessageFound;
         _virtualNearbyProvider.OnDistanceChanged += OnProviderDistanceChanged;
@@ -37,22 +38,22 @@ public class VirtualDevicesManager : MonoBehaviour
 
     private void OnProviderMessageFound(string encodedMessage)
     {
-        nearbyMessages.MessageFound(encodedMessage);
+        _nearbyMessages.MessageFound(encodedMessage);
     }
 
     private void OnProviderDistanceChanged(string encodedMessage)
     {
-        nearbyMessages.MessageDistanceChanged(encodedMessage);
+        _nearbyMessages.MessageDistanceChanged(encodedMessage);
     }
 
     private void OnProviderSignalChanged(string encodedMessage)
     {
-        nearbyMessages.MessageSignalChanged(encodedMessage);
+        _nearbyMessages.MessageSignalChanged(encodedMessage);
     }
 
     private void OnProviderMessageLost(string encodedMessage)
     {
-        nearbyMessages.MessageLost(encodedMessage);
+        _nearbyMessages.MessageLost(encodedMessage);
     }
 
     private void DisplayDevices()

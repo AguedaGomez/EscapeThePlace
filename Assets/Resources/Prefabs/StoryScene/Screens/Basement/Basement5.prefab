@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activator: {fileID: 2425183776530168307}
+  nameScene: MenuScene
 --- !u!1 &2425183776890615673
 GameObject:
   m_ObjectHideFlags: 0

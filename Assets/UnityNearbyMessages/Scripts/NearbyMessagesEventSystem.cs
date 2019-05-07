@@ -8,6 +8,7 @@ namespace NearbyMessages
 {
     public class NearbyMessagesEventSystem : MonoBehaviour
     {
+        public NearbyMessagesProviderConfig providerConfig;
         public int messageLostTimeout;
 
         public static NearbyMessagesEventSystem Instance { get; private set; }
@@ -56,6 +57,7 @@ namespace NearbyMessages
 
         public void MessageFound(string encodedMessage)
         {
+            if (!_scanRunning) return;
             var message = _messageParser.Parse(encodedMessage);
             _nearbyMessages[message.Id] = message;
             if (!_lostTimeOuts.ContainsKey(message.Id))
@@ -68,6 +70,7 @@ namespace NearbyMessages
 
         public void MessageDistanceChanged(string encodedMessage)
         {
+            if (!_scanRunning) return;
             var message = _messageParser.ParseWithDistance(encodedMessage);
             if (!_nearbyMessages.ContainsKey(message.Id)) return;
 
@@ -79,6 +82,7 @@ namespace NearbyMessages
 
         public void MessageSignalChanged(string encodedMessage)
         {
+            if (!_scanRunning) return;
             var message = _messageParser.ParseWithSignal(encodedMessage);
             if (!_nearbyMessages.ContainsKey(message.Id)) return;
 
@@ -90,6 +94,7 @@ namespace NearbyMessages
 
         public void MessageLost(string encodedMessage)
         {
+            if (!_scanRunning) return;
             var message = _messageParser.Parse(encodedMessage);
             if (!_nearbyMessages.ContainsKey(message.Id)) return;
 
@@ -106,7 +111,7 @@ namespace NearbyMessages
         private void Initialize()
         {
             Instance = this;
-            _messagesProvider = NearbyMessagesProviderFactory.CreateProvider();
+            _messagesProvider = NearbyMessagesProviderFactory.CreateProvider(providerConfig);
             _messageParser = new MessageParser();
         }
 
@@ -173,6 +178,7 @@ namespace NearbyMessages
             if (!_scanRunning) return;
             _scanRunning = false;
             _messagesProvider.StopScan();
+            ClearTimeouts();
         }
 
         private void Notify(Action<NearbyMessage> action, NearbyMessage message)
@@ -193,6 +199,15 @@ namespace NearbyMessages
             var lostTimeout = _lostTimeOuts[message.Id];
             StopCoroutine(lostTimeout);
             _lostTimeOuts.Remove(message.Id);
+        }
+
+        private void ClearTimeouts()
+        {
+            foreach (var entry in _lostTimeOuts)
+            {
+                StopCoroutine(entry.Value);
+            }
+            _lostTimeOuts.Clear();
         }
 
         private enum Event

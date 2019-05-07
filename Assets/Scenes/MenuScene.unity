@@ -655,7 +655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edfd35e809752ae4e81609ec8e2be9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nearbyMessages: {fileID: 923137936}
   text: {fileID: 1895299810}
 --- !u!114 &364808274
 MonoBehaviour:
@@ -2243,6 +2242,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: NearbyMessagesEventSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 3599224816714164358, guid: 1148626b3fdf26f4f9f4e2cf3141b345,
+        type: 3}
+      propertyPath: providerConfig.androidApiKey
+      value: AIzaSyDiyCFoAm4GlaE2pxJdqRg2kHqATSDIMPA
+      objectReference: {fileID: 0}
+    - target: {fileID: 3599224816714164358, guid: 1148626b3fdf26f4f9f4e2cf3141b345,
+        type: 3}
+      propertyPath: providerConfig.iOSApiKey
+      value: AIzaSyDiyCFoAm4GlaE2pxJdqRg2kHqATSDIMPA
+      objectReference: {fileID: 0}
     - target: {fileID: 3599224816714164359, guid: 1148626b3fdf26f4f9f4e2cf3141b345,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3219,9 +3228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f959de0e84dccc4ea9441c50f9d6c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nearbyMessages: {fileID: 923137936}
-  sceneToLoad: StoryScene
   nearbyPlaceNotFoundPanel: {fileID: 109219439}
+  sceneToLoad: StoryScene
   searchTimeout: 7
 --- !u!1 &1872357927
 GameObject:

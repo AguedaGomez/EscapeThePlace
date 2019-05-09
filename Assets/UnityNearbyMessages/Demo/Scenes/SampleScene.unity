@@ -1580,6 +1580,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: NearbyMessagesEventSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 3599224816714164358, guid: 1148626b3fdf26f4f9f4e2cf3141b345,
+        type: 3}
+      propertyPath: providerConfig.androidApiKey
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3599224816714164358, guid: 1148626b3fdf26f4f9f4e2cf3141b345,
+        type: 3}
+      propertyPath: providerConfig.iOSApiKey
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3599224816714164359, guid: 1148626b3fdf26f4f9f4e2cf3141b345,
         type: 3}
       propertyPath: m_LocalPosition.x

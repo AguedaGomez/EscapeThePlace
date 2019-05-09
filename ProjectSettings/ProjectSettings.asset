@@ -161,6 +161,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: es.uji.geotec.escapetheplace
     Standalone: com.Company.ProductName
+    iPhone: es.aguerto.escapetheplace
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -388,7 +389,8 @@ PlayerSettings:
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
   cameraUsageDescription: 
-  locationUsageDescription: 
+  locationUsageDescription: "Encontraremos tu ubicaci\xF3n buscando dispositivos bluetooth
+    cercanos"
   microphoneUsageDescription: 
   switchNetLibKey: 
   switchSocketMemoryPoolSize: 6144

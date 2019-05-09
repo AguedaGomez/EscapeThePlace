@@ -63,16 +63,16 @@
          * "subspecs" (optional)
            Subspecs to include for the pod.
      -->
-    <iosPod name="Google-Mobile-Ads-SDK" path="../google-mobile-ads-sdk" version="~> 7.0" bitcodeEnabled="true"
-            minTargetSdk="6.0">
-      <!-- Set of source URIs to search for this Cocoapod spec.
+    <!--<iosPod name="iOSUNM" path="NativeLibs/iOSUNM">-->
+    <iosPod name="iOSUNM" path="Assets/UnityNearbyMessages/Editor/iOS">
+       <!--Set of source URIs to search for this Cocoapod spec.
            By default Cocoapods will attempt to fetch the pod specs from:
            * $HOME/.cocoapods/repos
            * https://github.com/CocoaPods/Specs
            -->
-      <sources>
+      <!--<sources>
         <source>https://github.com/CocoaPods/Specs</source>
-      </sources>
+      </sources>-->
     </iosPod>
   </iosPods>
 </dependencies>

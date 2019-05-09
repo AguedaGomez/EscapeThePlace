@@ -7,7 +7,7 @@ public class InventoryItemActivator : ButtonActivator
 {
     public Image itemSprite;
 
-    private IInventoryRepository inventoryRepository;
+    private InventoryRepository inventoryRepository;
     private GameItems gameItems;
 
     public override void InitPhase()

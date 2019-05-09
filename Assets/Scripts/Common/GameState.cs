@@ -8,7 +8,11 @@ public class GameState : MonoBehaviour
 
     public string currentPlace;
 
-    public IInventoryRepository Inventory { get; private set; }
+    public InventoryRepository Inventory { get; private set; }
+    public GameProgressRepository GameProgress { get; private set; }
+
+    public PuzzleAnswersRepository PuzzleAnswers { get; private set; }
+
 
     void Awake()
     {
@@ -27,5 +31,7 @@ public class GameState : MonoBehaviour
     {
         Instance = this;
         Inventory = InventoryRepositoryFactory.Create();
+        GameProgress = GameProgressRepositoryFactory.Create();
+        PuzzleAnswers = PuzzleAnswersRepositoryFactory.Create();
     }
 }

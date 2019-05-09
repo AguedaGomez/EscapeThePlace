@@ -13,7 +13,7 @@ public class InventoryPanelManager : PanelManager
     public SpritesLoader spritesLoader;
     public ItemPanelDetailManager itemPanelDetail;
 
-    private IInventoryRepository itemsRepository;
+    private InventoryRepository itemsRepository;
     private Dictionary<string, Sprite> itemSprites;
     private List<GameObject> displayedItems = new List<GameObject>();
 

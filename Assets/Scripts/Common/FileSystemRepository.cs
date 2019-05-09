@@ -15,6 +15,7 @@ public class FileSystemRepository<T> : IRepository<T>
     public FileSystemRepository(string fileName)
     {
         _fileName = fileName;
+        Debug.Log(FilePath);
         Load();
     }
 
@@ -22,6 +23,11 @@ public class FileSystemRepository<T> : IRepository<T>
     {
         _repositoryCache.AddElement(key, element);
         Save();
+    }
+
+    public T GetElement(string key)
+    {
+        return _repositoryCache.GetElement(key);
     }
 
     public Dictionary<string, T> GetElements()

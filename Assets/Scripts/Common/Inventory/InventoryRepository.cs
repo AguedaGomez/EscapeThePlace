@@ -1,8 +1,13 @@
 ﻿using System.Collections.Generic;
 
-public class InMemoryInventoryRepository : IInventoryRepository
+public class InventoryRepository
 {
-    private InMemoryRepository<InventoryItem> _playerItems = new InMemoryRepository<InventoryItem>();
+    private IRepository<InventoryItem> _playerItems;
+
+    public InventoryRepository(IRepository<InventoryItem> repository)
+    {
+        _playerItems = repository;
+    }
 
     public void AddItem(InventoryItem newInventoryItem)
     {

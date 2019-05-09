@@ -6,7 +6,14 @@ public class InMemoryRepository<T> : IRepository<T>
 
     public void AddElement(string key, T element)
     {
-        _elements.Add(key, element);
+        _elements[key] = element;
+    }
+
+    public T GetElement(string key)
+    {
+        T element;
+        _elements.TryGetValue(key, out element);
+        return element;
     }
 
     public Dictionary<string, T> GetElements()

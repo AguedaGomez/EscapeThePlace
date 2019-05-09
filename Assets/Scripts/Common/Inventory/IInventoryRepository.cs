@@ -3,4 +3,6 @@
 public interface IInventoryRepository
 {
     List<InventoryItem> GetItems();
+
+    void AddItem(InventoryItem newInventoryItem);
 }

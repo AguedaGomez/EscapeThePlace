@@ -7,13 +7,13 @@ public class InventoryItemActivator : ButtonActivator
 {
     public Image itemSprite;
 
-    private InventoryRepository inventoryRepository;
+    private IInventoryRepository inventoryRepository;
     private GameItems gameItems;
 
     public override void InitPhase()
     {
         DisplayNewItemObtainedPopup();
-        inventoryRepository = InventoryRepository.Instance;
+        inventoryRepository = GameState.Instance.Inventory;
         gameItems = new GameItems();
         AddItemToInventory();
         base.InitPhase();

@@ -8,16 +8,24 @@ public class GameState : MonoBehaviour
 
     public string currentPlace;
 
+    public IInventoryRepository Inventory { get; private set; }
+
     void Awake()
     {
         if (Instance == null)
         {
             DontDestroyOnLoad(gameObject);
-            Instance = this;
+            Initialize();
         }
         else if (Instance != this)
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Initialize()
+    {
+        Instance = this;
+        Inventory = InventoryRepositoryFactory.Create();
     }
 }

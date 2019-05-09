@@ -36,7 +36,7 @@ public class InventoryPanelManager : PanelManager
 
     private void Init()
     {
-        itemsRepository = InventoryRepository.Instance;
+        itemsRepository = GameState.Instance.Inventory;
         itemSprites = spritesLoader.Sprites;
     }
     

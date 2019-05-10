@@ -568,6 +568,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a17c86de7b43c9d4d9a68cde1cb5ae5e, type: 3}
+--- !u!1 &5285054701007890389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7393991469677468239, guid: a17c86de7b43c9d4d9a68cde1cb5ae5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3442145596464545178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &6350519082868814630 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8639424002815528636, guid: a17c86de7b43c9d4d9a68cde1cb5ae5e,
@@ -744,7 +750,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5285054701007890389}
     - target: {fileID: 4174878450024821258, guid: 7cf8dac56f7288b4291f987d11b6338f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName

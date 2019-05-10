@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameState : MonoBehaviour
 {
@@ -10,7 +8,6 @@ public class GameState : MonoBehaviour
 
     public InventoryRepository Inventory { get; private set; }
     public GameProgressRepository GameProgress { get; private set; }
-
     public PuzzleAnswersRepository PuzzleAnswers { get; private set; }
 
 
@@ -33,5 +30,8 @@ public class GameState : MonoBehaviour
         Inventory = InventoryRepositoryFactory.Create();
         GameProgress = GameProgressRepositoryFactory.Create();
         PuzzleAnswers = PuzzleAnswersRepositoryFactory.Create();
+
+        Debug.Log($"Door code: {PuzzleAnswers.GetDoorCode()}");
+        Debug.Log($"Map sequence code: {string.Join(",", PuzzleAnswers.GetMapSequence())}");
     }
 }

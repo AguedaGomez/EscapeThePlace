@@ -1,25 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿
 public class GameProgressRepository
 {
-    private IRepository<int> _sceneProgresses;
+    private IRepository<string> _sceneProgresses;
 
-    public GameProgressRepository(IRepository<int> repository)
+    public GameProgressRepository(IRepository<string> repository)
     {
         _sceneProgresses = repository;
     }
 
-    public void UpdateSceneProgress(string sceneName, int stage)
+    public void UpdateSceneProgress(string sceneName, string stage)
     {
         _sceneProgresses.AddElement(sceneName, stage);
     }
 
-    public int GetSceneProgress(string sceneName)
+    public string GetSceneProgress(string sceneName)
     {
         var stage = _sceneProgresses.GetElement(sceneName);
-        if (stage == 0) return 1;
+        if (stage == null) return "1";
         return stage;
     }
 }

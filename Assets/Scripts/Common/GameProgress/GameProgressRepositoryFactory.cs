@@ -7,9 +7,9 @@ public class GameProgressRepositoryFactory
     public static GameProgressRepository Create()
     {
 #if UNITY_EDITOR
-        return new GameProgressRepository(new InMemoryRepository<int>());
+        return new GameProgressRepository(new InMemoryRepository<string>());
 #else
-        return new GameProgressRepository(new FileSystemRepository<int>("game-progress.dat"));
+        return new GameProgressRepository(new FileSystemRepository<string>("game-progress.dat"));
 #endif
     }
 }

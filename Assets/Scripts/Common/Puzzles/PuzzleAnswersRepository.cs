@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
-public class PuzzleAnswersRepository : MonoBehaviour
+public class PuzzleAnswersRepository
 {
     private static readonly string answersGenerated = "answersGenerated";
     private static readonly string doorAnswer = "doorAnswer";
     private static readonly string mapAnswer = "mapAnswer";
 
-    IRepository<string> _puzzleAnswers;
+    private IRepository<string> _puzzleAnswers;
+    private CodeGenerator _doorCodeGenerator = new CodeGenerator(4);
+    private SequenceGenerator _mapSequenceGenerator = new SequenceGenerator(12, 30, new int[] { 23 }, 4);
 
     public PuzzleAnswersRepository(IRepository<string> repository)
     {
@@ -30,8 +29,13 @@ public class PuzzleAnswersRepository : MonoBehaviour
     private void GenerateAnswers()
     {
         if (_puzzleAnswers.GetElement(answersGenerated) != null) return;
-        // Code generator
-        // Sequence generator
+
+        var doorCode = _doorCodeGenerator.GenerateCode();
+        _puzzleAnswers.AddElement(doorAnswer, doorCode);
+
+        var mapSequence = _mapSequenceGenerator.GenerateSequence();
+        _puzzleAnswers.AddElement(mapAnswer, string.Join(",", mapSequence));
+
         _puzzleAnswers.AddElement(answersGenerated, "yes");
     }
 }

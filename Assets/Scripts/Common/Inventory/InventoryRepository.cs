@@ -1,31 +1,21 @@
 ﻿using System.Collections.Generic;
 
-public class InventoryRepository : IInventoryRepository
+public class InventoryRepository
 {
-    public static InventoryRepository Instance
+    private IRepository<InventoryItem> _playerItems;
+
+    public InventoryRepository(IRepository<InventoryItem> repository)
     {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = new InventoryRepository();
-            }
-            return _instance;
-        }
+        _playerItems = repository;
     }
-    private static InventoryRepository _instance;
-
-    private List<InventoryItem> playerItems = new List<InventoryItem>();
-
-    private InventoryRepository() { }
 
     public void AddItem(InventoryItem newInventoryItem)
     {
-        playerItems.Add(newInventoryItem);
+        _playerItems.AddElement(newInventoryItem.name, newInventoryItem);
     }
 
     public List<InventoryItem> GetItems()
     {
-        return playerItems;
+        return new List<InventoryItem>(_playerItems.GetElements().Values);
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 237575192503461004}
   - component: {fileID: 3746783639175287829}
   m_Layer: 5
-  m_Name: MapButton23
+  m_Name: 30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 934809860280093437}
   - component: {fileID: 3095903212500920764}
   m_Layer: 5
-  m_Name: MapButton50
+  m_Name: 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 7904710599445896632}
   - component: {fileID: 939492729774972412}
   m_Layer: 5
-  m_Name: MapButton22
+  m_Name: 29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 1427879125564647792}
   - component: {fileID: 349005013363712483}
   m_Layer: 5
-  m_Name: MapButton20
+  m_Name: 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -953,7 +953,7 @@ GameObject:
   - component: {fileID: 8901950435274786484}
   - component: {fileID: 7307859055359502594}
   m_Layer: 5
-  m_Name: MapButton
+  m_Name: 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1100,7 +1100,7 @@ GameObject:
   - component: {fileID: 3825108944525817109}
   - component: {fileID: 8918988370441051364}
   m_Layer: 5
-  m_Name: MapButton10
+  m_Name: 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1247,7 +1247,7 @@ GameObject:
   - component: {fileID: 8937936829856657158}
   - component: {fileID: 820002219422496502}
   m_Layer: 5
-  m_Name: MapButton30
+  m_Name: 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1611,7 +1611,7 @@ GameObject:
   - component: {fileID: 7924052176920212764}
   - component: {fileID: 8089903893951044220}
   m_Layer: 5
-  m_Name: MapButton31
+  m_Name: 27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1758,7 +1758,7 @@ GameObject:
   - component: {fileID: 3629379091647084103}
   - component: {fileID: 5294128620655614054}
   m_Layer: 5
-  m_Name: MapButton41
+  m_Name: 26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1905,7 +1905,7 @@ GameObject:
   - component: {fileID: 3506279429528092027}
   - component: {fileID: 7660203399869275800}
   m_Layer: 5
-  m_Name: MapButton01
+  m_Name: 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2052,7 +2052,7 @@ GameObject:
   - component: {fileID: 2507494637050774606}
   - component: {fileID: 1198516333705226991}
   m_Layer: 5
-  m_Name: MapButton03
+  m_Name: 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2199,7 +2199,7 @@ GameObject:
   - component: {fileID: 1924188885203143856}
   - component: {fileID: 6433365421041533363}
   m_Layer: 5
-  m_Name: MapButton61
+  m_Name: 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2346,7 +2346,7 @@ GameObject:
   - component: {fileID: 7181419050519011781}
   - component: {fileID: 5190974020943610868}
   m_Layer: 5
-  m_Name: MapButton60
+  m_Name: 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2605,7 +2605,7 @@ GameObject:
   - component: {fileID: 5111331290791315091}
   - component: {fileID: 164582861257483887}
   m_Layer: 5
-  m_Name: MapButton40
+  m_Name: 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2752,7 +2752,7 @@ GameObject:
   - component: {fileID: 5386728060970269277}
   - component: {fileID: 459016241790003054}
   m_Layer: 5
-  m_Name: MapButton02
+  m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2899,7 +2899,7 @@ GameObject:
   - component: {fileID: 8130185157102205598}
   - component: {fileID: 5637541115531951470}
   m_Layer: 5
-  m_Name: MapButton51
+  m_Name: 25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3046,7 +3046,7 @@ GameObject:
   - component: {fileID: 8508714221478311151}
   - component: {fileID: 7008100662946501915}
   m_Layer: 5
-  m_Name: MapButton70
+  m_Name: 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3193,7 +3193,7 @@ GameObject:
   - component: {fileID: 3207585683677354445}
   - component: {fileID: 7427046779708105616}
   m_Layer: 5
-  m_Name: MapButton21
+  m_Name: 28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

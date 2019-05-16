@@ -128,7 +128,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: "Los tel\xE9fonos de tu planta tampoco parecen funcionar. Algo dentro
         de ti te est\xE1 avisando de que lo mejor ser\xE1 que salgas cuanto antes
-        del edificio. Con cuidado te diriges hacia la puerta principal del edificio."
+        del edificio. Con cuidado te diriges hacia la puerta principal."
       objectReference: {fileID: 0}
     - target: {fileID: 8085411775456971295, guid: 117adc284fa953e4e8d10cf5765dd204,
         type: 3}

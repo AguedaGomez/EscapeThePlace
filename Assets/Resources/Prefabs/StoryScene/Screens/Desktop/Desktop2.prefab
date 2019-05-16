@@ -127,9 +127,9 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "De pronto \"\xA1\xA1PLAF!!\" un sonido brusco y seco precede a un corte
-        de luz que te deja completamente a oscuras en tu despacho. Tras unos segundos
-        en los que esperas sin \xE9xito que la luz vuelva buscas el m\xF3vil a tientas.
-        \"Mierda, est\xE1 en el coche\"."
+        de luz que te deja completamente a oscuras. Tras unos segundos en los que
+        esperas sin \xE9xito que la luz vuelva buscas el m\xF3vil a tientas. \"\xA1Vaya!,
+        est\xE1 en el coche\"."
       objectReference: {fileID: 0}
     - target: {fileID: 6164687075932681240, guid: 306ea6a266d71f74ea7fb9539065f257,
         type: 3}

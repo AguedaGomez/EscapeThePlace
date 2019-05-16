@@ -133,6 +133,10 @@ GameObject:
   - component: {fileID: 3504542545362165998}
   - component: {fileID: 8760377086428525438}
   - component: {fileID: 5454793999498328187}
+  - component: {fileID: 4240694250026573893}
+  - component: {fileID: 6157354353550218515}
+  - component: {fileID: 7090703566820286933}
+  - component: {fileID: 1920771854494018099}
   m_Layer: 5
   m_Name: Kitchen3
   m_TagString: Untagged
@@ -230,6 +234,63 @@ MonoBehaviour:
   activator: {fileID: 8760377086428525438}
   nextScreen: {fileID: 7331734131269188549, guid: 9a5576bd9316c7d40915b919bb9bcdff,
     type: 3}
+--- !u!114 &4240694250026573893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3504542545362165996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83043b2e041c0d94c9c79d4bcb38366b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 0}
+  button: {fileID: 3073471653554176283}
+--- !u!114 &6157354353550218515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3504542545362165996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c187172bc3b9945bd4ada0cdd04cb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 4240694250026573893}
+  nextScreen: {fileID: 4264645507161696599, guid: 28e415369e25f1c4fb8c0b72f4af4065,
+    type: 3}
+--- !u!114 &7090703566820286933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3504542545362165996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83043b2e041c0d94c9c79d4bcb38366b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 0}
+  button: {fileID: 7486065732581897885}
+--- !u!114 &1920771854494018099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3504542545362165996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15acd473b3823f348ad08ff7ab7ff939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 7090703566820286933}
+  nameScene: MainMenu
 --- !u!1 &3504542545662052180
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,11 +560,45 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1142955742653219567, guid: 8642a069232e4e4469d806e66a7763fe,
+    - target: {fileID: 740590156399979521, guid: 8642a069232e4e4469d806e66a7763fe,
         type: 3}
-      propertyPath: m_Text
-      value: "Interac\xFAa con el entorno. Quiz\xE1 encuentres algo \xFAtil en la
-        caja de herramientas.\n"
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740590156399979521, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740590156399979521, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740590156399979521, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740590156399979521, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740590156399979521, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 740590156399979521, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740590156399979521, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3785823032963249995, guid: 8642a069232e4e4469d806e66a7763fe,
         type: 3}
@@ -539,6 +634,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1142955742653219567, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_Text
+      value: "Interac\xFAa con el entorno. Quiz\xE1 encuentres algo \xFAtil en la
+        caja de herramientas.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1142955742653219567, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1142955742653219567, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 56
+      objectReference: {fileID: 0}
+    - target: {fileID: 1142955742653219567, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1142955742653219567, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8642a069232e4e4469d806e66a7763fe, type: 3}
@@ -677,11 +798,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4174878451299129351, guid: 7cf8dac56f7288b4291f987d11b6338f,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4174878450024821258, guid: 7cf8dac56f7288b4291f987d11b6338f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -741,6 +857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174878451299129351, guid: 7cf8dac56f7288b4291f987d11b6338f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cf8dac56f7288b4291f987d11b6338f, type: 3}
@@ -963,3 +1084,27 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5243958530624839542}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3073471653554176283 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7089055386939006573, guid: a17c86de7b43c9d4d9a68cde1cb5ae5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5243958530624839542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7486065732581897885 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3397281339869850091, guid: a17c86de7b43c9d4d9a68cde1cb5ae5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5243958530624839542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

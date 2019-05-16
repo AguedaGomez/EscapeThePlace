@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 6609453830284064882}
   - component: {fileID: 8545822731426140120}
   - component: {fileID: 8095152389250750967}
+  - component: {fileID: 8253660799575579451}
   m_Layer: 5
   m_Name: Hall6
   m_TagString: Untagged
@@ -187,6 +188,21 @@ MonoBehaviour:
   activator: {fileID: 0}
   speed: 0.04
   textBox: {fileID: 8085107448904990062}
+--- !u!114 &8253660799575579451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2855229750498657002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee09606d5347cb469185c8c53725946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 0}
+  sceneName: Hall
+  sceneStage: 6
 --- !u!1 &4465111734029971367
 GameObject:
   m_ObjectHideFlags: 0

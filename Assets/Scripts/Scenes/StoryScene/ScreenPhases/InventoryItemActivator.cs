@@ -6,22 +6,18 @@ using UnityEngine.UI;
 public class InventoryItemActivator : ButtonActivator
 {
     public Image itemSprite;
+    public string sceneName;
+    public GameStages gameStage;
 
     private InventoryRepository inventoryRepository;
     private GameItems gameItems;
 
     public override void InitPhase()
     {
-        DisplayNewItemObtainedPopup();
         inventoryRepository = GameState.Instance.Inventory;
         gameItems = new GameItems();
         AddItemToInventory();
         base.InitPhase();
-    }
-
-    private void DisplayNewItemObtainedPopup()
-    {
-        // Activar panel
     }
 
     private void AddItemToInventory()

@@ -23,13 +23,13 @@ public class MapButtonBehaviour : MonoBehaviour
         if (buttonImage.sprite == pressedImage)
         {
             buttonImage.sprite = targetImage;
-            mapPuzzleManager.currentList.Remove(myButton);
+            mapPuzzleManager.currentList.Remove(myButton.name);
         }
             
         else
         {
             buttonImage.sprite = pressedImage;
-            mapPuzzleManager.currentList.Add(myButton);
+            mapPuzzleManager.currentList.Add(myButton.name);
         }
         mapPuzzleManager.CheckSequence();
             

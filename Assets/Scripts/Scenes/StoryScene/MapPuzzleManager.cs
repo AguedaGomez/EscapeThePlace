@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class MapPuzzleManager : ScreenPhase
 {
-    public List<Button> correctList = new List<Button>();
+    private List<string> correctList = new List<string>();
 
 
     [HideInInspector]
-    public List<Button> currentList = new List<Button>();
+    public List<string> currentList = new List<string>();
 
+    void Start()
+    {
+        correctList = GameState.Instance.PuzzleAnswers.GetMapSequence();
+    }
 
     public void CheckSequence()
     {
@@ -21,6 +25,7 @@ public class MapPuzzleManager : ScreenPhase
             if (!currentList.Contains(correctList[i]))
                 return;
         }
+        
         NotifyPhaseFinished();
     }
 

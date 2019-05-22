@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activator: {fileID: 0}
-  speed: 0.05
+  speed: 0.04
   textBox: {fileID: 2257905441841973709}
 --- !u!114 &2530132151764489358
 MonoBehaviour:
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.74509805}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -283,6 +283,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TextBoxBg
+      objectReference: {fileID: 0}
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6769183796948400561}
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CancelEffect
       objectReference: {fileID: 0}
     - target: {fileID: 917983815335495962, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
@@ -389,15 +399,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6769183796948400561}
-    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CancelEffect
+      propertyPath: m_Text
+      value: "El eco de tus propios pasos eriza tu piel cuando caminas por el garaje.
+        Manoseas las puertas tratando de encontrar el picaporte de tu trastero. Al
+        encontrarlo, abres la puerta y accedes a una sala algo m\xE1s amplia."
       objectReference: {fileID: 0}
     - target: {fileID: 4163112830662617094, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
@@ -405,13 +412,6 @@ PrefabInstance:
       value: "El eco de tus propios pasos eriza tu piel cuando te acercas a los trasteros.
         Manoseas las puertas tratando de encontrar el picaporte. Al fin, abres una
         de ellas y accedes a una sala algo m\xE1s amplia."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
-        type: 3}
-      propertyPath: m_Text
-      value: "El eco de tus propios pasos eriza tu piel cuando te acercas a los trasteros.
-        Manoseas las puertas tratando de encontrar el picaporte, abres la puerta y
-        accedes a una sala algo m\xE1s amplia."
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4163112830662617094, guid: 3a2c7cb39338618479030a6adb32192e, type: 3}

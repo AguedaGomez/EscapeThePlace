@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activator: {fileID: 0}
-  speed: 0.05
+  speed: 0.04
   textBox: {fileID: 2679753295409536147}
 --- !u!114 &7567712671105826785
 MonoBehaviour:
@@ -208,6 +208,29 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TextBoxBg
+      objectReference: {fileID: 0}
+    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_Text
+      value: "Como tantas veces te encuentras absorto en tu trabajo dentro del edificio
+        ESPAITEC 2. Las horas pasan mientras la rutina diaria de tus compa\xF1eros
+        avanza. Ni siquiera te das cuenta cuando el \xFAltimo compa\xF1ero sale del
+        despacho y se despide con un t\xEDmido \"adi\xF3s\"."
+      objectReference: {fileID: 0}
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 636419963270182587}
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CancelEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 917983815335495962, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
@@ -313,29 +336,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 636419963270182587}
-    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CancelEffect
-      objectReference: {fileID: 0}
-    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
-        type: 3}
-      propertyPath: m_Text
-      value: "Como tantas veces te encuentras absorto en tu trabajo dentro del edificio
-        ESPAITEC 2. Las horas pasan mientras la rutina diaria de tus compa\xF1eros
-        avanza. Ni siquiera te das cuenta cuando el \xFAltimo compa\xF1ero en pie
-        sale del despacho y se despide con un t\xEDmido \"adi\xF3s\"."
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4163112830662617094, guid: 3a2c7cb39338618479030a6adb32192e, type: 3}

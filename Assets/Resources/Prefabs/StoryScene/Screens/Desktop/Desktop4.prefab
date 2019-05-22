@@ -93,6 +93,7 @@ MonoBehaviour:
   activator: {fileID: 0}
   button: {fileID: 3500688271150464472}
   itemSprite: {fileID: 3128578152200653553}
+  sceneName: 
 --- !u!114 &6811233298572765120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +193,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PopUpInventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429450618822, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c8c9b73878f7e5d4aa5731e76dea353e,
+        type: 3}
+    - target: {fileID: 4982017429450618822, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
@@ -298,6 +310,41 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4982017429252590046, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429252590046, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 264
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 213
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 1915572686760599375, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -328,46 +375,15 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 264
-      objectReference: {fileID: 0}
-    - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 304
-      objectReference: {fileID: 0}
-    - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 213
-      objectReference: {fileID: 0}
-    - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8
-      objectReference: {fileID: 0}
     - target: {fileID: 4982017429252590017, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_Text
-      value: "Has guardado el bloc de notas del primer d\xEDa en tu inventario."
+      value: Recuerda que tienes un bloc de notas en tu inventario.
       objectReference: {fileID: 0}
-    - target: {fileID: 4982017429450618822, guid: b503fb90a4b1be64d9a61ad6f498b030,
+    - target: {fileID: 4982017429252590017, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c8c9b73878f7e5d4aa5731e76dea353e,
-        type: 3}
-    - target: {fileID: 4982017429450618822, guid: b503fb90a4b1be64d9a61ad6f498b030,
-        type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b503fb90a4b1be64d9a61ad6f498b030, type: 3}

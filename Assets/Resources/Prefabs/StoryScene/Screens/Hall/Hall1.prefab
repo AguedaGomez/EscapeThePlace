@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activator: {fileID: 0}
-  speed: 0.05
+  speed: 0.04
   textBox: {fileID: 9121004324688072025}
 --- !u!114 &7581261876878730663
 MonoBehaviour:
@@ -329,14 +329,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TextBoxBg
       objectReference: {fileID: 0}
-    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
+    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
-      propertyPath: m_Text
-      value: "El edificio est\xE1 en completo silencio, salvo por algunos ruidos sutiles
-        que te llaman la atenci\xF3n, oblig\xE1ndote a pensar si hay alguien m\xE1s
-        en el edificio. Piensas en pegar un grito a ver si queda alguien m\xE1s, pero
-        tu institno te dice que ser\xE1 mejor que no lo hagas."
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5208737564033014922}
     - target: {fileID: 917983815335495962, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -442,11 +439,14 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
+    - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5208737564033014922}
+      propertyPath: m_Text
+      value: "El edificio est\xE1 en completo silencio, salvo por algunos ruidos sutiles
+        que te llaman la atenci\xF3n, oblig\xE1ndote a pensar si hay alguien m\xE1s
+        en este. Piensas en pegar un grito a ver si queda alguien m\xE1s, pero tu
+        institno te dice que ser\xE1 mejor que no lo hagas."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a2c7cb39338618479030a6adb32192e, type: 3}
 --- !u!1 &717999803002984436 stripped

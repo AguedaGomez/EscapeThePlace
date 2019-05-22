@@ -9,6 +9,7 @@ public class UseItemActivator : ScreenPhase
     public string correctItemName;
     public ItemPanelDetailManager itemPanelDetailBehaviour;
     public GameObject inventoryPanel;
+    public Animator useButtonAnimator;
 
     public ScreenPhase wrongItemPhase;
 
@@ -28,9 +29,10 @@ public class UseItemActivator : ScreenPhase
             NotifyPhaseFinished();
         else
         {
-            itemPanelDetailBehaviour.OnCloseButtonClick();
-            inventoryPanel.SetActive(false);
-            wrongItemPhase.InitPhase();
+            useButtonAnimator.SetBool("WrongUse", true);
+            //itemPanelDetailBehaviour.OnCloseButtonClick();
+            //inventoryPanel.SetActive(false);
+            //wrongItemPhase.InitPhase();
         }
 
     }

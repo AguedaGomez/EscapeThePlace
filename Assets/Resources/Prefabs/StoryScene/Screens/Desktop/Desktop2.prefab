@@ -121,7 +121,7 @@ PrefabInstance:
         type: 3}
       propertyPath: nextScreen
       value: 
-      objectReference: {fileID: 1809194317368092904, guid: 91728355aeeda0e4f806760a218c52f3,
+      objectReference: {fileID: 8472959422608472862, guid: 05ed2fbbfc2be3e4bbfb1127686bf684,
         type: 3}
     - target: {fileID: 2679753295409536147, guid: 306ea6a266d71f74ea7fb9539065f257,
         type: 3}

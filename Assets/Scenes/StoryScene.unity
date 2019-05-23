@@ -332,7 +332,7 @@ PrefabInstance:
     - target: {fileID: 2445066084006842903, guid: 28f3a320c75b07743b0dfead6843feaf,
         type: 3}
       propertyPath: currentPlace
-      value: basement
+      value: desktop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28f3a320c75b07743b0dfead6843feaf, type: 3}

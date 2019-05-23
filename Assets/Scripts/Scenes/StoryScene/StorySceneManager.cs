@@ -19,7 +19,7 @@ public class StorySceneManager : MonoBehaviour
     private void LoadScreen()
     {
         var sceneName = GameState.Instance.currentPlace;
-        var prefab = prefabsLoader.Prefab($"{sceneName}/{sceneName}1");
+        var prefab = prefabsLoader.Prefab($"{sceneName}/{sceneName}{GameState.Instance.GameProgress.GetSceneProgress(sceneName)}");
         Instantiate(prefab, canvas.transform);
     }
 

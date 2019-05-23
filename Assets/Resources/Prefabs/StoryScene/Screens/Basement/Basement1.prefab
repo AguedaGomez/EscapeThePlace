@@ -402,9 +402,9 @@ PrefabInstance:
     - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
       propertyPath: m_Text
-      value: "El eco de tus propios pasos eriza tu piel cuando te acercas a los trasteros.
-        Manoseas las puertas tratando de encontrar el picaporte, abres la puerta y
-        accedes a una sala algo m\xE1s amplia."
+      value: "El eco de tus propios pasos eriza tu piel cuando caminas por el garaje.
+        Manoseas las puertas tratando de encontrar el picaporte de tu trastero. Al
+        encontrarlo, abres la puerta y accedes a una sala algo m\xE1s amplia."
       objectReference: {fileID: 0}
     - target: {fileID: 4163112830662617094, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}

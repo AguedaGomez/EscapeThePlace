@@ -161,6 +161,7 @@ GameObject:
   - component: {fileID: 7331734131269188551}
   - component: {fileID: 4543880302361611272}
   - component: {fileID: 139886658405946395}
+  - component: {fileID: 2060041516799303162}
   m_Layer: 5
   m_Name: Kitchen4
   m_TagString: Untagged
@@ -242,6 +243,7 @@ MonoBehaviour:
   activator: {fileID: 0}
   button: {fileID: 4279021095790934261}
   itemSprite: {fileID: 2349791779407925212}
+  sceneName: 
 --- !u!114 &139886658405946395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +258,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activator: {fileID: 4543880302361611272}
   nameScene: MenuScene
+--- !u!114 &2060041516799303162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7331734131269188549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee09606d5347cb469185c8c53725946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 0}
+  sceneName: Kitchen
+  sceneStage: 5
 --- !u!1001 &7331734130575243290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -267,6 +284,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PopUpInventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429450618822, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d145920470a901a4abb7de401908028a,
+        type: 3}
+    - target: {fileID: 4982017429450618822, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
@@ -373,15 +401,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1915572686760599375, guid: b503fb90a4b1be64d9a61ad6f498b030,
+    - target: {fileID: 4982017429252590046, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1915572686760599375, guid: b503fb90a4b1be64d9a61ad6f498b030,
+    - target: {fileID: 4982017429252590046, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
+      propertyPath: m_SizeDelta.x
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
@@ -408,6 +436,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 218
       objectReference: {fileID: 0}
+    - target: {fileID: 1915572686760599375, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915572686760599375, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4982017429252590017, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_Text
@@ -416,18 +454,7 @@ PrefabInstance:
     - target: {fileID: 4982017429252590017, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_FontData.m_LineSpacing
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4982017429450618822, guid: b503fb90a4b1be64d9a61ad6f498b030,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d145920470a901a4abb7de401908028a,
-        type: 3}
-    - target: {fileID: 4982017429450618822, guid: b503fb90a4b1be64d9a61ad6f498b030,
-        type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b503fb90a4b1be64d9a61ad6f498b030, type: 3}

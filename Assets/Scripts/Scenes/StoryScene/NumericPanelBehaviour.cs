@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class NumericPanelBehaviour : ScreenPhase
 {
     public Text screenText;
-    public string correctCode;
+
     public int lenghtCode;
     public Image redLight;
     public Image greenLight;
@@ -15,8 +15,13 @@ public class NumericPanelBehaviour : ScreenPhase
     public Sprite redLightOn;
     public Sprite greenLightOn;
 
+    private string correctCode;
 
-   public void OnNumericButtonClick(Text value)
+    void Start()
+    {
+        correctCode = GameState.Instance.PuzzleAnswers.GetDoorCode();
+    }
+    public void OnNumericButtonClick(Text value)
    {
         if (value.text == "C")
             ClearCode();

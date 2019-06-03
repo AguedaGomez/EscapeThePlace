@@ -365,6 +365,7 @@ GameObject:
   - component: {fileID: 2576170094436699836}
   - component: {fileID: 9054195522463338200}
   - component: {fileID: 3253760978305295649}
+  - component: {fileID: 4394337170111134488}
   - component: {fileID: 2134190986901034094}
   m_Layer: 5
   m_Name: Basement2
@@ -459,6 +460,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activator: {fileID: 9054195522463338200}
   button: {fileID: 2576170094602938614}
+--- !u!114 &4394337170111134488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2576170094436699838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee09606d5347cb469185c8c53725946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 3253760978305295649}
+  sceneName: Basement
+  sceneStage: 3
 --- !u!114 &2134190986901034094
 MonoBehaviour:
   m_ObjectHideFlags: 0

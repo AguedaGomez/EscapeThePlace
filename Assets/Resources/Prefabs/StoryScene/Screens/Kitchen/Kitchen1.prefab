@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4359837067450838291}
   - component: {fileID: 985154461932743323}
   - component: {fileID: 9094172982993781507}
+  - component: {fileID: 42787758228019418}
   m_Layer: 5
   m_Name: Kitchen1
   m_TagString: Text
@@ -122,6 +123,21 @@ MonoBehaviour:
   activator: {fileID: 985154461932743323}
   nextScreen: {fileID: 6161118754282364724, guid: 3c79674ab725579448afb5794bbedd82,
     type: 3}
+--- !u!114 &42787758228019418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4264645507161696599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee09606d5347cb469185c8c53725946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 985154461932743323}
+  sceneName: Kitchen
+  sceneStage: 2
 --- !u!1 &4306020033959015688
 GameObject:
   m_ObjectHideFlags: 0

@@ -123,17 +123,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1461361000659297242, guid: 0ac0e45cff53e294498061d1a4fe7d24,
         type: 3}
-    - target: {fileID: 2053266330989613770, guid: 01312a45653af374a82b5a74f401e857,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 25d41c6996f5844499a83f56e3ab5795,
-        type: 3}
-    - target: {fileID: 2938505883679920833, guid: 01312a45653af374a82b5a74f401e857,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7398192516123184244, guid: 01312a45653af374a82b5a74f401e857,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -169,11 +158,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 643.2
       objectReference: {fileID: 0}
-    - target: {fileID: 5917592837211190274, guid: 01312a45653af374a82b5a74f401e857,
-        type: 3}
-      propertyPath: m_Text
-      value: "\xBFQuieres salir a la p\xE1gina principal del juego?\nPulsa este bot\xF3n"
-      objectReference: {fileID: 0}
     - target: {fileID: 2421403204551870523, guid: 01312a45653af374a82b5a74f401e857,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -183,6 +167,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 127.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2053266330989613770, guid: 01312a45653af374a82b5a74f401e857,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 25d41c6996f5844499a83f56e3ab5795,
+        type: 3}
+    - target: {fileID: 5917592837211190274, guid: 01312a45653af374a82b5a74f401e857,
+        type: 3}
+      propertyPath: m_Text
+      value: "\xBFQuieres salir a la pantalla de inicio?\nPulsa este bot\xF3n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938505883679920833, guid: 01312a45653af374a82b5a74f401e857,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01312a45653af374a82b5a74f401e857, type: 3}

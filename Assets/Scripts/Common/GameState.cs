@@ -31,8 +31,6 @@ public class GameState : MonoBehaviour
         GameProgress = GameProgressRepositoryFactory.Create();
         PuzzleAnswers = PuzzleAnswersRepositoryFactory.Create();
 
-        GameProgress.UpdateSceneProgress("game", "new");
-
         Debug.Log($"Door code: {PuzzleAnswers.GetDoorCode()}");
         Debug.Log($"Map sequence code: {string.Join(",", PuzzleAnswers.GetMapSequence())}");
     }

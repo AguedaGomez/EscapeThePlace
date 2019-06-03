@@ -1246,7 +1246,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -50, y: 0}
+  m_SizeDelta: {x: -100, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1985612059
 MonoBehaviour:
@@ -1284,10 +1284,11 @@ MonoBehaviour:
   m_Text: "Bienvenido a ESCAPE THE PLACE, un juego de tipo Escape Room con el que
     podr\xE1s jugar en lugares diferentes. El juego mezcla tecnolog\xEDas de sistemas
     de informaci\xF3n geogr\xE1fica y aplicaciones Smartphone con el mundo real para
-    crear una experiencia divertida que ponga a prueba tu ingenio.\nEl objetivo del
-    juego es escapar de un lugar en el que est\xE1s encerrado. Pero no ser\xE1 sencillo,
-    para conseguirlo deber\xE1s seguir pistas, resolver acertijos y utilizar tu inteligencia.\nPulsa
-    continuar y te contaremos m\xE1s."
+    crear una experiencia divertida que ponga a prueba tu ingenio.\n\nEl objetivo
+    del juego es escapar de un lugar en el que est\xE1s encerrado. Pero no ser\xE1
+    sencillo, para conseguirlo deber\xE1s seguir pistas, resolver acertijos y utilizar
+    tu inteligencia.\n\nPulsa continuar y te contaremos c\xF3mo se juega y estar\xE1s
+    listo para empezar la aventura."
 --- !u!222 &1985612060
 CanvasRenderer:
   m_ObjectHideFlags: 0

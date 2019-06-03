@@ -9,10 +9,9 @@ public class MenuManager : MonoBehaviour
     void Start()
     {
         var progressGame = GameState.Instance.GameProgress.GetSceneProgress("game");
-        if(progressGame == "new")
+        if(progressGame == "1")
         {
             helpPanel.GetComponent<HelpPanelManager>().Show();
-            GameState.Instance.GameProgress.UpdateSceneProgress("game", "continuos");
         }
     }
 }

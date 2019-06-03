@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ConditionalClickActivator : ScreenPhase
+public class ConditionalMenuClickActivator : ScreenPhase
 {
-    public GameObject welcomePanel;
     public ScreenPhase sceneLoader;
 
     public override void InitPhase()
@@ -12,10 +12,13 @@ public class ConditionalClickActivator : ScreenPhase
         var gameState = GameState.Instance.GameProgress.GetSceneProgress("game");
         if (gameState == "1")
         {
-            welcomePanel.SetActive(true);
-        } else
-        {
             sceneLoader.InitPhase();
+            GameState.Instance.GameProgress.UpdateSceneProgress("game", "2");
+            GameState.Instance.currentPlace = "desktop";
+        }
+        else
+        {
+            GetComponent<HelpChildManger>().Hide();
         }
         base.InitPhase();
     }

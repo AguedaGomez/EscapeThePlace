@@ -19,7 +19,7 @@ SEnviro
 SUCRE4Kids
 29072012
 {GameState.Instance.PuzzleAnswers.GetDoorCode()}
-sM4RTUj1.3s
+sM4RT.Uj1.3s
 3rM3s
 S.L1br4ry";
         codeListText.text = text;

@@ -326,6 +326,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4982017429252590046, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429252590046, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -50
+      objectReference: {fileID: 0}
     - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -399,9 +409,9 @@ PrefabInstance:
     - target: {fileID: 4982017429252590017, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_Text
-      value: "El archivador se abre con sonido el\xE9ctrico. \"Brrr\", abres r\xE1pidamente
-        y tras buscar un poco encuentras lo que buscas: la lista de c\xF3digos del
-        panel de la puerta. La guardas en tu bolsillo orgullosamente."
+      value: "\"Brrr\" el archivador se abre con sonido el\xE9ctrico. Tras buscar
+        un poco encuentras lo que buscas: la lista de c\xF3digos del panel de la puerta.
+        La guardas en tu bolsillo orgullosamente."
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429252590017, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}

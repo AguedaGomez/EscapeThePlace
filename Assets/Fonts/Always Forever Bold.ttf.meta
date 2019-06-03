@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: cf80053e9f9a54b1b8fd4db5328f3daa
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Always Forever
+  fontNames:
+  - Always Forever
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 44eb96163967f4c3aa97e46e16478132, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

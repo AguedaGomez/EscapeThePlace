@@ -3941,14 +3941,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1036649820444576223}
     m_Modifications:
-    - target: {fileID: 3009078870695565, guid: 8642a069232e4e4469d806e66a7763fe, type: 3}
-      propertyPath: m_Name
-      value: CluePanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3009078870695565, guid: 8642a069232e4e4469d806e66a7763fe, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5488265495950430589, guid: 8642a069232e4e4469d806e66a7763fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4054,10 +4046,13 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 740590156399979521, guid: 8642a069232e4e4469d806e66a7763fe,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 11.299988
+    - target: {fileID: 3009078870695565, guid: 8642a069232e4e4469d806e66a7763fe, type: 3}
+      propertyPath: m_Name
+      value: CluePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009078870695565, guid: 8642a069232e4e4469d806e66a7763fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3785823032963249995, guid: 8642a069232e4e4469d806e66a7763fe,
         type: 3}
@@ -4100,6 +4095,11 @@ PrefabInstance:
       value: "Est\xE1 demasiado oscuro para ver algo. Necesitas alg\xFAn objeto, revisa
         tus notas por si encuentras alguna herramienta. Si ya lo tienes, prueba a
         usarlo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 740590156399979521, guid: 8642a069232e4e4469d806e66a7763fe,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 11.299988
       objectReference: {fileID: 0}
     - target: {fileID: 3461870245678880752, guid: 8642a069232e4e4469d806e66a7763fe,
         type: 3}

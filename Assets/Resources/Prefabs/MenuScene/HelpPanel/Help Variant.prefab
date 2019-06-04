@@ -123,6 +123,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6941497771804965982, guid: ccd336e484f5eab448e7a0b5dae50679,
         type: 3}
+    - target: {fileID: 855549375414891270, guid: 386454f7bce0a984d89f0aa8d6677b63,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1921
+      objectReference: {fileID: 0}
+    - target: {fileID: 855549375414891270, guid: 386454f7bce0a984d89f0aa8d6677b63,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 7096594720094013402, guid: 386454f7bce0a984d89f0aa8d6677b63,
         type: 3}
       propertyPath: m_AnchoredPosition.x

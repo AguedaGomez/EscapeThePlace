@@ -2,34 +2,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using NearbyMessages;
 
 public class StorySceneManager : MonoBehaviour
 {
     public Canvas canvas;
     public PrefabsLoader prefabsLoader;
+    public GameObject areaLeftPanelPrefab;
+    public string nonPhysicalScene;
 
     private NearbyMessagesEventSystem _nearbyMessages;
     private GameObject currentScreen;
+
+    private string CurrentScene { get => GameState.Instance.currentPlace;  }
+    private string CurrentSceneProgress { get => GameState.Instance.GameProgress.GetSceneProgress(CurrentScene); }
     
     // Start is called before the first frame update
     void Start()
     {
-        _nearbyMessages = NearbyMessagesEventSystem.Instance;
-        _nearbyMessages.OnNearbyMessageLost += OnPlaceOutOfRange;
+        ListenToPhysicalSceneChanges();
         LoadScreen();
     }
 
-    private void OnDestroy()
+    void OnDestroy()
     {
+        if (_nearbyMessages == null) return;
         _nearbyMessages.OnNearbyMessageLost -= OnPlaceOutOfRange;
+    }
+
+    private void ListenToPhysicalSceneChanges()
+    {
+        if (CurrentScene.ToLower() == nonPhysicalScene.ToLower()) return;
+
+        _nearbyMessages = NearbyMessagesEventSystem.Instance;
+        if (_nearbyMessages == null) return;
+
+        _nearbyMessages.OnNearbyMessageLost += OnPlaceOutOfRange;
     }
 
     private void LoadScreen()
     {
-        var sceneName = GameState.Instance.currentPlace;
-        var prefab = prefabsLoader.Prefab($"{sceneName}/{sceneName}{GameState.Instance.GameProgress.GetSceneProgress(sceneName)}");
+        var prefab = prefabsLoader.Prefab($"{CurrentScene}/{CurrentScene}{CurrentSceneProgress}");
         Instantiate(prefab, canvas.transform);
     }
 
@@ -37,7 +50,7 @@ public class StorySceneManager : MonoBehaviour
     {
         var currenPlace = GameState.Instance.currentPlace;
         if (message.Content != currenPlace) return;
-        SceneManager.LoadScene("MenuScene");
+        Instantiate(areaLeftPanelPrefab, canvas.transform);
     }
 
 }

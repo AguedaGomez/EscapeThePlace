@@ -66,18 +66,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6af75439f547a9e4dafbbab443ef4a7a, type: 3}
-    m_FontSize: 31
+    m_Font: {fileID: 12800000, guid: cf80053e9f9a54b1b8fd4db5328f3daa, type: 3}
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 48
+    m_MaxSize: 71
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.33
+    m_LineSpacing: 0.7
   m_Text: "- LISTA DE C\xD3DIGOS: Almac\xE9n\r del garaje.\r\n\n- CAJA DE HERRAMIENTAS:
     En la\r cocina, debajo del fregadero.\r\n\n\n\n"
 --- !u!1 &4124903953644107859

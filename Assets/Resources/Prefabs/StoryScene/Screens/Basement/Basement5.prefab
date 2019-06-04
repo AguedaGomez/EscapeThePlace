@@ -33,7 +33,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2425183776890615654}
-  - {fileID: 7243008381067682355}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -152,7 +151,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7243008381067682355}
   m_Father: {fileID: 2425183776530168311}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -203,7 +203,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2425183776530168311}
+    m_TransformParent: {fileID: 2425183776890615654}
     m_Modifications:
     - target: {fileID: 4982017429263277349, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
@@ -239,17 +239,17 @@ PrefabInstance:
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
@@ -259,7 +259,7 @@ PrefabInstance:
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
@@ -289,12 +289,12 @@ PrefabInstance:
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -1122
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -683
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429263277348, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
@@ -325,6 +325,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429252590046, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982017429252590046, guid: b503fb90a4b1be64d9a61ad6f498b030,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429450618823, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
@@ -399,9 +409,9 @@ PrefabInstance:
     - target: {fileID: 4982017429252590017, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}
       propertyPath: m_Text
-      value: "El archivador se abre con sonido el\xE9ctrico. \"Brrr\", abres r\xE1pidamente
-        y tras buscar un poco encuentras lo que buscas: la lista de c\xF3digos del
-        panel de la puerta. La guardas en tu bolsillo orgullosamente."
+      value: "\"Brrr\" el archivador se abre con sonido el\xE9ctrico. Tras buscar
+        un poco encuentras lo que buscas: la lista de c\xF3digos del panel de la puerta.
+        La guardas en tu bolsillo orgullosamente."
       objectReference: {fileID: 0}
     - target: {fileID: 4982017429252590017, guid: b503fb90a4b1be64d9a61ad6f498b030,
         type: 3}

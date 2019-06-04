@@ -179,6 +179,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1070275282}
   prefabsLoader: {fileID: 341443427}
+  areaLeftPanelPrefab: {fileID: 8176409922837632934, guid: 5e3bf6adc911d4dcc8ee5e35fe723f60,
+    type: 3}
+  nonPhysicalScene: desktop
 --- !u!1 &815822763
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +218,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BackGroundColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -332,7 +335,7 @@ PrefabInstance:
     - target: {fileID: 2445066084006842903, guid: 28f3a320c75b07743b0dfead6843feaf,
         type: 3}
       propertyPath: currentPlace
-      value: desktop
+      value: basement
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28f3a320c75b07743b0dfead6843feaf, type: 3}
@@ -388,7 +391,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96

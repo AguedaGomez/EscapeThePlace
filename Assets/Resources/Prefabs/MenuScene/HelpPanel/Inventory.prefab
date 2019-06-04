@@ -168,23 +168,23 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -11
       objectReference: {fileID: 0}
-    - target: {fileID: 6181270444706281350, guid: fa0016ed4ab36cd4cae1c30662b22597,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391316507679772997, guid: fa0016ed4ab36cd4cae1c30662b22597,
-        type: 3}
-      propertyPath: m_Text
-      value: "Pulsa este bot\xF3n para examinar y utilizar los objectos que recopiles
-        en la historia. Algunos de los objetos pueden contener informaci\xF3n relevante.
-        \xA1Exam\xEDnalos con atenci\xF3n!"
-      objectReference: {fileID: 0}
     - target: {fileID: 7021474559485441933, guid: fa0016ed4ab36cd4cae1c30662b22597,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 90a1b52704cdd2e419beaed044f87cc2,
         type: 3}
+    - target: {fileID: 3391316507679772997, guid: fa0016ed4ab36cd4cae1c30662b22597,
+        type: 3}
+      propertyPath: m_Text
+      value: "Pulsa este bot\xF3n para examinar y utilizar los objetos que recopiles
+        en la historia. Algunos de los objetos pueden contener informaci\xF3n relevante.
+        \xA1Exam\xEDnalos con atenci\xF3n!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181270444706281350, guid: fa0016ed4ab36cd4cae1c30662b22597,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa0016ed4ab36cd4cae1c30662b22597, type: 3}

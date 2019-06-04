@@ -586,12 +586,12 @@ PrefabInstance:
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -100
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
@@ -637,21 +637,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CloseButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 6844755294926153199, guid: 583cff916ae902940823439020c90009,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6844755294926153199, guid: 583cff916ae902940823439020c90009,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5304099296075304484}
-    - target: {fileID: 6844755294926153199, guid: 583cff916ae902940823439020c90009,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Hide
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 583cff916ae902940823439020c90009, type: 3}

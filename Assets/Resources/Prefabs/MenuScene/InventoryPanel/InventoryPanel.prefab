@@ -792,11 +792,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4174878449659739196}
     m_Modifications:
-    - target: {fileID: 6844755294926153198, guid: 583cff916ae902940823439020c90009,
-        type: 3}
-      propertyPath: m_Name
-      value: CloseButton
-      objectReference: {fileID: 0}
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -855,12 +850,12 @@ PrefabInstance:
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -98
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -71
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
@@ -902,6 +897,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6844755294926153198, guid: 583cff916ae902940823439020c90009,
+        type: 3}
+      propertyPath: m_Name
+      value: CloseButton
+      objectReference: {fileID: 0}
     - target: {fileID: 6844755294926153199, guid: 583cff916ae902940823439020c90009,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -927,11 +927,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4174878451293320761}
     m_Modifications:
-    - target: {fileID: 6844755294926153198, guid: 583cff916ae902940823439020c90009,
-        type: 3}
-      propertyPath: m_Name
-      value: CloseButton
-      objectReference: {fileID: 0}
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -990,12 +985,12 @@ PrefabInstance:
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -98
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -71
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 6844755294882866501, guid: 583cff916ae902940823439020c90009,
         type: 3}
@@ -1036,6 +1031,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6844755294926153198, guid: 583cff916ae902940823439020c90009,
+        type: 3}
+      propertyPath: m_Name
+      value: CloseButton
       objectReference: {fileID: 0}
     - target: {fileID: 6844755294926153199, guid: 583cff916ae902940823439020c90009,
         type: 3}

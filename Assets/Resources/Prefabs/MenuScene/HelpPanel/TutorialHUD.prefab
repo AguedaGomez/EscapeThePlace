@@ -358,8 +358,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: 'Puedes interactuar con las escenas de juego tocando en cualquier punto
-    de su imagen. Pulsa estos botones si quieres:'
+  m_Text: "Podr\xE1s interactuar con las escenas de juego tocando en cualquier punto
+    de su imagen. En cada una de ellas tambi\xE9n podr\xE1s:"
 --- !u!1 &4429562006324106873
 GameObject:
   m_ObjectHideFlags: 0

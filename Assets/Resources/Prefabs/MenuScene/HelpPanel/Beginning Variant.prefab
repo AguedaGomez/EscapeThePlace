@@ -161,7 +161,7 @@ PrefabInstance:
     - target: {fileID: 9104347724758286512, guid: cb710c0b646fc4543ac7c8e1823599d8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -109
+      value: -85.3
       objectReference: {fileID: 0}
     - target: {fileID: 9104347724758286512, guid: cb710c0b646fc4543ac7c8e1823599d8,
         type: 3}
@@ -176,7 +176,7 @@ PrefabInstance:
     - target: {fileID: 9104347724758286512, guid: cb710c0b646fc4543ac7c8e1823599d8,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -853
+      value: -849.5
       objectReference: {fileID: 0}
     - target: {fileID: 9104347724758286512, guid: cb710c0b646fc4543ac7c8e1823599d8,
         type: 3}
@@ -192,7 +192,7 @@ PrefabInstance:
     - target: {fileID: 4136557919958058239, guid: cb710c0b646fc4543ac7c8e1823599d8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -11
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 4136557919958058239, guid: cb710c0b646fc4543ac7c8e1823599d8,
         type: 3}
@@ -202,8 +202,8 @@ PrefabInstance:
     - target: {fileID: 5398988796236478662, guid: cb710c0b646fc4543ac7c8e1823599d8,
         type: 3}
       propertyPath: m_Text
-      value: "\xBFQuieres volver a ver la introducci\xF3n de la historia? Pulsa este
-        bot\xF3n"
+      value: "Cuando quieras volver a ver la introducci\xF3n de la historia deber\xE1s
+        pulsar este bot\xF3n"
       objectReference: {fileID: 0}
     - target: {fileID: 3473726023495867909, guid: cb710c0b646fc4543ac7c8e1823599d8,
         type: 3}

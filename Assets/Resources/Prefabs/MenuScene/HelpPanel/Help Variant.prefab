@@ -141,7 +141,7 @@ PrefabInstance:
     - target: {fileID: 7096594720094013402, guid: 386454f7bce0a984d89f0aa8d6677b63,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -85
+      value: -98.4
       objectReference: {fileID: 0}
     - target: {fileID: 7096594720094013402, guid: 386454f7bce0a984d89f0aa8d6677b63,
         type: 3}
@@ -151,7 +151,7 @@ PrefabInstance:
     - target: {fileID: 7096594720094013402, guid: 386454f7bce0a984d89f0aa8d6677b63,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -852
+      value: -878.8
       objectReference: {fileID: 0}
     - target: {fileID: 7096594720094013402, guid: 386454f7bce0a984d89f0aa8d6677b63,
         type: 3}
@@ -177,7 +177,7 @@ PrefabInstance:
     - target: {fileID: 6253249165509951404, guid: 386454f7bce0a984d89f0aa8d6677b63,
         type: 3}
       propertyPath: m_Text
-      value: "Pulsa este bot\xF3n si quieres volver a ver esta ayuda."
+      value: "Cuando quieras volver a ver esta ayuda deber\xE1s pulsar este bot\xF3n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 386454f7bce0a984d89f0aa8d6677b63, type: 3}

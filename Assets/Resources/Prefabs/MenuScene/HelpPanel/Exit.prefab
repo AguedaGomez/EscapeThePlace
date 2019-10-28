@@ -196,7 +196,7 @@ PrefabInstance:
     - target: {fileID: 2421403204551870523, guid: 01312a45653af374a82b5a74f401e857,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -11
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 2053266330989613770, guid: 01312a45653af374a82b5a74f401e857,
         type: 3}
@@ -207,7 +207,8 @@ PrefabInstance:
     - target: {fileID: 5917592837211190274, guid: 01312a45653af374a82b5a74f401e857,
         type: 3}
       propertyPath: m_Text
-      value: "\xBFQuieres salir a la pantalla de inicio?\nPulsa este bot\xF3n"
+      value: "Cuando quieras volver a la pantalla de inicio deber\xE1s pulsar este
+        bot\xF3n"
       objectReference: {fileID: 0}
     - target: {fileID: 2938505883679920833, guid: 01312a45653af374a82b5a74f401e857,
         type: 3}

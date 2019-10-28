@@ -1,41 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using UnityEngine.UI;
-using NearbyMessages;
+using IBeacons;
 
 public class NearbyPlacePanelManager : PanelManager
 {
     public Text text;
 
-    private NearbyMessagesEventSystem _nearbyMessages;
+    private IBeaconsEventSystem _iBeacons;
     private Dictionary<string, string> _placeLabels;
     private string _currentPlace;
 
     public void Show(string placeName)
     {
         Init();
-        _nearbyMessages.OnNearbyMessageLost += OnSceneOutOfRange;
+        _iBeacons.OnBeaconLost += OnPlaceOutOfRange;
         DisplayPlace(placeName);
         base.Show();
     }
 
     public override void Hide()
     {
-        _nearbyMessages.OnNearbyMessageLost -= OnSceneOutOfRange;
+        _iBeacons.OnBeaconLost -= OnPlaceOutOfRange;
         base.Hide();
     }
 
-    private void OnSceneOutOfRange(NearbyMessage message)
+    private void OnPlaceOutOfRange(IBeacon beacon)
     {
-        if (message.Content != _currentPlace) return;
+        if (beacon.Tag != _currentPlace) return;
         Hide();
     }
 
     private void Init()
     {
         if (_placeLabels != null) return;
-        _nearbyMessages = NearbyMessagesEventSystem.Instance;
+        _iBeacons = IBeaconsEventSystem.Instance;
         _placeLabels = new Dictionary<string, string>
         {
             { "Kitchen", "la cocina" },

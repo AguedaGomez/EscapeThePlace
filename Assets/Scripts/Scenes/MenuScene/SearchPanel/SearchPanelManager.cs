@@ -1,8 +1,7 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using NearbyMessages;
+using IBeacons;
 
 public class SearchPanelManager : PanelManager
 {
@@ -11,20 +10,20 @@ public class SearchPanelManager : PanelManager
     public string sceneToLoad;
     public int searchTimeout;
 
-    private NearbyMessagesEventSystem _nearbyMessages;
+    private IBeaconsEventSystem _nearbyMessages;
     private Coroutine _timeout;
 
     public override void Show()
     {
-        _nearbyMessages = NearbyMessagesEventSystem.Instance;
-        _nearbyMessages.OnNearbyMessageFound += OnPlaceNearby;
+        _nearbyMessages = IBeaconsEventSystem.Instance;
+        _nearbyMessages.OnBeaconFound += OnPlaceNearby;
         base.Show();
         _timeout = StartCoroutine(SearchTimeout());
     }
 
     public override void Hide()
     {
-        _nearbyMessages.OnNearbyMessageFound -= OnPlaceNearby;
+        _nearbyMessages.OnBeaconFound -= OnPlaceNearby;
         CancelTimeout();
         base.Hide();
     }
@@ -37,10 +36,10 @@ public class SearchPanelManager : PanelManager
         nearbyPlaceNotFoundPanel.Show();
     }
 
-    private void OnPlaceNearby(NearbyMessage message)
+    private void OnPlaceNearby(IBeacon beacon)
     {
         Hide();
-        GameState.Instance.currentPlace = message.Content;
+        GameState.Instance.currentPlace = beacon.Tag;
         SceneManager.LoadScene(sceneToLoad);
     }
 

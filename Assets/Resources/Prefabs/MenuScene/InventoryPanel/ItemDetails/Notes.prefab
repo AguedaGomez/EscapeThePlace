@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.7
-  m_Text: "- LISTA DE C\xD3DIGOS: Almac\xE9n\r del garaje.\r\n\n- CAJA DE HERRAMIENTAS:
+  m_Text: "- LISTA DE C\xD3DIGOS: Trastero\r del garaje.\r\n\n- CAJA DE HERRAMIENTAS:
     En la\r cocina, debajo del fregadero.\r\n\n\n\n"
 --- !u!1 &4124903953644107859
 GameObject:

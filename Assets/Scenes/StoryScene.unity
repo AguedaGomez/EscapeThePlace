@@ -179,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1070275282}
   prefabsLoader: {fileID: 341443427}
-  areaLeftPanelPrefab: {fileID: 8176409922837632934, guid: 5e3bf6adc911d4dcc8ee5e35fe723f60,
+  areaLeftPanelPrefab: {fileID: 3772855359916312744, guid: 5e3bf6adc911d4dcc8ee5e35fe723f60,
     type: 3}
   nonPhysicalScene: desktop
 --- !u!1 &815822763

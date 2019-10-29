@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using NearbyMessages;
+using IBeacons;
 
 public class StorySceneManager : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class StorySceneManager : MonoBehaviour
     public GameObject areaLeftPanelPrefab;
     public string nonPhysicalScene;
 
-    private NearbyMessagesEventSystem _nearbyMessages;
+    private IBeaconsEventSystem _iBeacons;
     private GameObject currentScreen;
 
     private string CurrentScene { get => GameState.Instance.currentPlace;  }
@@ -26,18 +26,18 @@ public class StorySceneManager : MonoBehaviour
 
     void OnDestroy()
     {
-        if (_nearbyMessages == null) return;
-        _nearbyMessages.OnNearbyMessageLost -= OnPlaceOutOfRange;
+        if (_iBeacons == null) return;
+        _iBeacons.OnBeaconLost -= OnPlaceOutOfRange;
     }
 
     private void ListenToPhysicalSceneChanges()
     {
         if (CurrentScene.ToLower() == nonPhysicalScene.ToLower()) return;
 
-        _nearbyMessages = NearbyMessagesEventSystem.Instance;
-        if (_nearbyMessages == null) return;
+        _iBeacons = IBeaconsEventSystem.Instance;
+        if (_iBeacons == null) return;
 
-        _nearbyMessages.OnNearbyMessageLost += OnPlaceOutOfRange;
+        _iBeacons.OnBeaconLost += OnPlaceOutOfRange;
     }
 
     private void LoadScreen()
@@ -46,10 +46,10 @@ public class StorySceneManager : MonoBehaviour
         Instantiate(prefab, canvas.transform);
     }
 
-    private void OnPlaceOutOfRange(NearbyMessage message)
+    private void OnPlaceOutOfRange(IBeacon beacon)
     {
         var currenPlace = GameState.Instance.currentPlace;
-        if (message.Content != currenPlace) return;
+        if (beacon.Tag != currenPlace) return;
         Instantiate(areaLeftPanelPrefab, canvas.transform);
     }
 

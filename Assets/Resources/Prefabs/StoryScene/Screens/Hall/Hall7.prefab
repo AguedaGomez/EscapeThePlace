@@ -1,5 +1,84 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1468888955650658756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8733234546832280280}
+  - component: {fileID: 4083894187635056000}
+  - component: {fileID: 4535018768510128069}
+  m_Layer: 5
+  m_Name: TicketCode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8733234546832280280
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468888955650658756}
+  m_LocalRotation: {x: -0, y: -0, z: 0.087232254, w: 0.996188}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1941922494953954818}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.009001}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -18, y: 230}
+  m_SizeDelta: {x: 387.4, y: 72.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4083894187635056000
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468888955650658756}
+  m_CullTransparentMesh: 0
+--- !u!114 &4535018768510128069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468888955650658756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: d05bc48ab096e644da6bffcd0ab84df0, type: 3}
+    m_FontSize: 49
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 65
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
 --- !u!1 &1619225422051669213
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,6 +172,7 @@ GameObject:
   - component: {fileID: 2419394186735045403}
   - component: {fileID: 6398633763254908057}
   - component: {fileID: 2355525724973223635}
+  - component: {fileID: 8660062323151324723}
   m_Layer: 5
   m_Name: Hall7
   m_TagString: Untagged
@@ -201,6 +281,19 @@ MonoBehaviour:
   activator: {fileID: 6398633763254908057}
   nextScreen: {fileID: 8280443921930597830, guid: ed41a44e2c26b3444b3fdf8ad163640d,
     type: 3}
+--- !u!114 &8660062323151324723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3049777885932988142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a625cae26b0221e44b7404839ab16f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  code: {fileID: 4535018768510128069}
 --- !u!1 &5303120108928318427
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +325,7 @@ RectTransform:
   m_Children:
   - {fileID: 3645981233887655713}
   - {fileID: 7432828564705517449}
+  - {fileID: 8733234546832280280}
   - {fileID: 4481664413350790170}
   m_Father: {fileID: 3708403166407133435}
   m_RootOrder: 0
@@ -296,8 +390,7 @@ PrefabInstance:
       value: "\xA1\xA1\xA1Has conseguido escapar del edificio y eres libre!!! Haz
         una captura de esta pantalla y comp\xE1rtela en tus redes sociales con los
         hasthags #GISDay19UJI y #Misi\xF3n2 para obtener una participaci\xF3n m\xE1s
-        en el sorteo. \xA1Te esperamos el d\xEDa 13 a las 12:00 en el Jard\xED dels
-        Sentits!"
+        en el sorteo. \xA1Te esperamos el d\xEDa 13 en la Misi\xF3n 7!"
       objectReference: {fileID: 0}
     - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
@@ -496,7 +589,7 @@ PrefabInstance:
     - target: {fileID: 4776177285880242996, guid: 1ca34c466e1a4524c8a3454141628a0d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4776177285880242996, guid: 1ca34c466e1a4524c8a3454141628a0d,
         type: 3}

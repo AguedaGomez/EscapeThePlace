@@ -1,5 +1,80 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1877980476368342187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7047834916910133967}
+  - component: {fileID: 8576296735303193262}
+  - component: {fileID: 1894407373676893044}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7047834916910133967
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877980476368342187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1226891971579636121}
+  m_Father: {fileID: 4752317787538370029}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8576296735303193262
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877980476368342187}
+  m_CullTransparentMesh: 0
+--- !u!114 &1894407373676893044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877980476368342187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &8602319214657812669
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,7 +107,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2148812754163926583}
+  - {fileID: 7047834916910133967}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -92,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activator: {fileID: 0}
   speed: 0.04
-  textBox: {fileID: 4771381897641169445}
+  textBox: {fileID: 5684542055144816011}
 --- !u!114 &6053094874528468296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,7 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activator: {fileID: 849618149888746715}
-  button: {fileID: 1561947151659271571}
+  button: {fileID: 1835763062357420605}
 --- !u!114 &7244702110258207577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,12 +196,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activator: {fileID: 6053094874528468296}
   nameScene: MenuScene
---- !u!1001 &1256302785606209325
+--- !u!1001 &2142480689594441859
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 4752317787538370029}
+    m_TransformParent: {fileID: 7047834916910133967}
     m_Modifications:
     - target: {fileID: 2610568445701080997, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
@@ -136,8 +211,8 @@ PrefabInstance:
     - target: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
       propertyPath: m_Text
-      value: "Si no est\xE1s dentro del edificio Espaitec II, dir\xEDgete hacia all\xED.
-        Te esperamos en la 5\xAA planta para comenzar a jugar."
+      value: "Si no est\xE1s en el edificio Espaitec II, dir\xEDgete hacia all\xED.
+        Te esperamos en la 5\xAA planta para empezar a jugar."
       objectReference: {fileID: 0}
     - target: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
         type: 3}
@@ -256,17 +331,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a2c7cb39338618479030a6adb32192e, type: 3}
---- !u!224 &2148812754163926583 stripped
+--- !u!224 &1226891971579636121 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 917983815335495962, guid: 3a2c7cb39338618479030a6adb32192e,
     type: 3}
-  m_PrefabInstance: {fileID: 1256302785606209325}
+  m_PrefabInstance: {fileID: 2142480689594441859}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1561947151659271571 stripped
+--- !u!114 &1835763062357420605 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 342957547888691902, guid: 3a2c7cb39338618479030a6adb32192e,
     type: 3}
-  m_PrefabInstance: {fileID: 1256302785606209325}
+  m_PrefabInstance: {fileID: 2142480689594441859}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -274,11 +349,11 @@ MonoBehaviour:
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4771381897641169445 stripped
+--- !u!114 &5684542055144816011 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6005570119437507848, guid: 3a2c7cb39338618479030a6adb32192e,
     type: 3}
-  m_PrefabInstance: {fileID: 1256302785606209325}
+  m_PrefabInstance: {fileID: 2142480689594441859}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
